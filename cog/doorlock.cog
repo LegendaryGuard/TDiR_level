@@ -1,0 +1,34 @@
+# Jedi Knight Cog Script
+# locked door
+# Shred18 20002
+
+symbols
+
+thing       player   local
+thing       door
+thing       ghost
+sound       locksnd
+message     activated
+
+end
+
+
+code
+
+activated:
+   door = GetSenderRef();
+   player = GetSourceRef();
+   if(GetInv(player,84)== 0)   
+{  print("It's Locked");
+   PlaySoundThing(locksnd, player, 1, -1, -1, 0x80); 
+}
+else
+   if(GetInv(player,84)== 1) 
+{  TeleportThing(player,ghost);
+   print("Found secret DragonBalls!");
+   ChangeInv(player, 84, -1);
+}   
+   Return;
+
+end
+

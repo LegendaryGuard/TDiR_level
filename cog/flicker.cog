@@ -1,0 +1,112 @@
+# Jedi Knight Cog Script
+#
+# flicker.cog
+#
+# Makes it so that 3dos crossing more than one sector don't
+# flicker or disappear and also when the player looks at it
+#
+# Go go Hellcat for explaining this to me. =)
+#
+# Concept by Hellcat (and GBK?)
+# Raped for TDiR by Hell Raiser [Jon Harmon]
+
+flags=0x240
+
+symbols
+
+int			ObjCount			local
+
+thing		ObjThng0=-1
+thing		ObjThng1=-1
+thing		ObjThng2=-1
+thing		ObjThng3=-1
+thing		ObjThng4=-1
+thing		ObjThng5=-1
+thing		ObjThng6=-1
+thing		ObjThng7=-1
+thing		ObjThng8=-1
+thing		ObjThng9=-1
+
+template	ObjTpl0			local
+template	ObjTpl1			local
+template	ObjTpl2			local
+template	ObjTpl3			local
+template	ObjTpl4			local
+template	ObjTpl5			local
+template	ObjTpl6			local
+template	ObjTpl7			local
+template	ObjTpl8			local
+template	ObjTpl9			local
+
+vector		ObjPos0			local
+vector		ObjPos1			local
+vector		ObjPos2			local
+vector		ObjPos3			local
+vector		ObjPos4			local
+vector		ObjPos5			local
+vector		ObjPos6			local
+vector		ObjPos7			local
+vector		ObjPos8			local
+vector		ObjPos9			local
+
+vector		ObjLook0		local
+vector		ObjLook1		local
+vector		ObjLook2		local
+vector		ObjLook3		local
+vector		ObjLook4		local
+vector		ObjLook5		local
+vector		ObjLook6		local
+vector		ObjLook7		local
+vector		ObjLook8		local
+vector		ObjLook9		local
+
+message		startup                                                          
+message		pulse                                                            
+
+end                                                                           
+
+code
+
+startup:
+
+	//Get our local player
+	player = GetLocalPlayerThing();
+
+	ObjCount=0;
+
+	for(x=0; x<10; x=x+1)
+	{if(ObjThng0[x] != -1) ObjCount=ObjCount+1;}
+
+	//Sleep while the level loads
+	sleep(0.25);
+
+	//Get the rotation and position and template of the object
+
+	for(x=0; x<ObjCount; x=x+1)
+	{
+		ObjPos0[x]=GetThingPos(ObjThng0[x]);
+		ObjLook0[x]=GetThingLVec(ObjThng0[x]);
+		ObjTpl0[x]=GetThingTemplate(ObjThng0[x]);
+	}
+
+	//Start our pulse
+	SetPulse(0.01);
+
+return;
+
+pulse:
+
+	for(x=0; x<ObjCount; x=x+1)
+	{	
+		//Destroy the 3do	
+		DestroyThing(ObjThng0[x]);
+
+		//Recreate the 3do
+		ObjThng0[x]=CreateThingAtPos(ObjTpl0[x], GetThingSector(Player), ObjPos0[x], ObjLook0[x]);
+
+		SetThingLook(ObjThng0[x], ObjLook0[x]);
+	}
+
+return;
+
+end

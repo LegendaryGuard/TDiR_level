@@ -1,0 +1,213 @@
+# Jedi Knight Cog Script
+#
+# ViewSave.cog
+#
+# When a sector is entered it unadjoins some far off sectors and gies some adjoins GE0 4
+# (visible). When sector is exited - resets. This works along the similar line of LEC's
+# original door cogs as a way to improve framerate.
+#
+# 'view' sectors = the sectors the player enters to trigger the cog
+# 'prob' sectors = the sectors that are unadjoined. 
+# 'fix' surfaces = the adjoins that are made visible.
+#
+# [JW]
+#
+# (C) 1999 Jeff Walters
+flags=0x240
+
+symbols
+
+message  entered
+message  exited
+message  newplayer
+
+sector   view1	linkid=1
+sector   view2	linkid=1
+sector   view3	linkid=1
+sector   view4	linkid=1
+sector   view5	linkid=1
+sector   view6	linkid=1
+sector   view7	linkid=1
+sector   view8	linkid=1
+sector   view9	linkid=1
+sector   view10	linkid=1
+sector   view11	linkid=1
+sector   view12	linkid=1
+sector   view13	linkid=1
+sector   view14	linkid=1
+sector   view15	linkid=1
+sector   view16	linkid=1
+sector   view17	linkid=1
+sector   view18	linkid=1
+sector   view19	linkid=1
+sector   view20	linkid=1
+sector   view21	linkid=1
+sector   view22	linkid=1
+sector   view23	linkid=1
+sector   view24	linkid=1
+sector   view25	linkid=1
+sector   view26	linkid=1
+sector   view27	linkid=1
+sector   view28	linkid=1
+sector   view29	linkid=1
+sector   view30	linkid=1
+
+sector  prob1
+sector  prob2
+sector  prob3
+sector  prob4
+sector  prob5
+sector  prob6
+sector  prob7
+sector  prob8
+sector  prob9
+sector  prob10
+sector  prob11
+sector  prob12
+sector  prob13
+sector  prob14
+sector  prob15
+
+surface	fix1
+surface	fix2
+surface	fix3
+surface	fix4
+surface	fix5
+surface	fix6
+surface	fix7
+surface	fix8
+surface	fix9
+surface	fix10
+surface	fix11
+surface	fix12
+surface	fix13
+surface	fix14
+surface	fix15
+surface	fix16
+surface	fix17
+surface	fix18
+surface	fix19
+surface	fix20
+surface	fix21
+surface	fix22
+surface	fix23
+surface	fix24
+surface	fix25
+surface	fix26
+surface	fix27
+surface	fix28
+surface	fix29
+surface	fix30
+
+end
+
+## Code Section
+code
+
+entered:
+	if(GetSenderID() != 1) Return;
+	SetFaceGeoMode(fix1,4);
+	SetFaceGeoMode(fix2,4);
+	SetFaceGeoMode(fix3,4);
+	SetFaceGeoMode(fix4,4);
+	SetFaceGeoMode(fix5,4);
+	SetFaceGeoMode(fix6,4);
+	SetFaceGeoMode(fix7,4);
+	SetFaceGeoMode(fix8,4);
+	SetFaceGeoMode(fix9,4);
+	SetFaceGeoMode(fix10,4);
+	SetFaceGeoMode(fix11,4);
+	SetFaceGeoMode(fix12,4);
+	SetFaceGeoMode(fix13,4);
+	SetFaceGeoMode(fix14,4);
+	SetFaceGeoMode(fix15,4);
+	SetFaceGeoMode(fix16,4);
+	SetFaceGeoMode(fix17,4);
+	SetFaceGeoMode(fix18,4);
+	SetFaceGeoMode(fix19,4);
+	SetFaceGeoMode(fix20,4);
+	SetFaceGeoMode(fix21,4);
+	SetFaceGeoMode(fix22,4);
+	SetFaceGeoMode(fix23,4);
+	SetFaceGeoMode(fix24,4);
+	SetFaceGeoMode(fix25,4);
+	SetFaceGeoMode(fix26,4);
+	SetFaceGeoMode(fix27,4);
+	SetFaceGeoMode(fix28,4);
+	SetFaceGeoMode(fix29,4);
+	SetFaceGeoMode(fix30,4);
+	SetSectorAdjoins(prob1, 0);
+	SetSectorAdjoins(prob2, 0);
+	SetSectorAdjoins(prob3, 0);
+	SetSectorAdjoins(prob4, 0);
+	SetSectorAdjoins(prob5, 0);
+	SetSectorAdjoins(prob6, 0);
+	SetSectorAdjoins(prob7, 0);
+	SetSectorAdjoins(prob8, 0);
+	SetSectorAdjoins(prob9, 0);
+	SetSectorAdjoins(prob10, 0);
+	SetSectorAdjoins(prob11, 0);
+	SetSectorAdjoins(prob12, 0);
+	SetSectorAdjoins(prob13, 0);
+	SetSectorAdjoins(prob14, 0);
+	SetSectorAdjoins(prob15, 0);	
+	Return;
+
+exited:
+	if(GetSenderID() != 1) Return;
+	call changer;	
+	Return;
+
+newplayer:
+	call changer;
+	Return;
+
+changer:
+	SetFaceGeoMode(fix1,0);
+	SetFaceGeoMode(fix2,0);
+	SetFaceGeoMode(fix3,0);
+	SetFaceGeoMode(fix4,0);
+	SetFaceGeoMode(fix5,0);
+	SetFaceGeoMode(fix6,0);
+	SetFaceGeoMode(fix7,0);
+	SetFaceGeoMode(fix8,0);
+	SetFaceGeoMode(fix9,0);
+	SetFaceGeoMode(fix10,0);
+	SetFaceGeoMode(fix11,0);
+	SetFaceGeoMode(fix12,0);
+	SetFaceGeoMode(fix13,0);
+	SetFaceGeoMode(fix14,0);
+	SetFaceGeoMode(fix15,0);
+	SetFaceGeoMode(fix16,0);
+	SetFaceGeoMode(fix17,0);
+	SetFaceGeoMode(fix18,0);
+	SetFaceGeoMode(fix19,0);
+	SetFaceGeoMode(fix20,0);
+	SetFaceGeoMode(fix21,0);
+	SetFaceGeoMode(fix22,0);
+	SetFaceGeoMode(fix23,0);
+	SetFaceGeoMode(fix24,0);
+	SetFaceGeoMode(fix25,0);
+	SetFaceGeoMode(fix26,0);
+	SetFaceGeoMode(fix27,0);
+	SetFaceGeoMode(fix28,0);
+	SetFaceGeoMode(fix29,0);
+	SetFaceGeoMode(fix30,0);
+	SetSectorAdjoins(prob1, 1);
+	SetSectorAdjoins(prob2, 1);
+	SetSectorAdjoins(prob3, 1);
+	SetSectorAdjoins(prob4, 1);
+	SetSectorAdjoins(prob5, 1);
+	SetSectorAdjoins(prob6, 1);
+	SetSectorAdjoins(prob7, 1);
+	SetSectorAdjoins(prob8, 1);
+	SetSectorAdjoins(prob9, 1);
+	SetSectorAdjoins(prob10, 1);
+	SetSectorAdjoins(prob11, 1);
+	SetSectorAdjoins(prob12, 1);
+	SetSectorAdjoins(prob13, 1);
+	SetSectorAdjoins(prob14, 1);
+	SetSectorAdjoins(prob15, 1);
+	Return;
+end
+

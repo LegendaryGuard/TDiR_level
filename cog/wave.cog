@@ -1,0 +1,45 @@
+# Shred18 2002
+# Jedi Knight Cog Script
+# wave.cog
+#
+
+symbols
+message	startup
+message	pulse
+message activated
+
+material    roshiwater=roshiwater.mat
+material    roshitv=roshitv.mat
+thing		water
+end
+
+## Code Section
+code
+startup:
+        MaterialAnim(roshiwater, 10, 1);
+        MaterialAnim(roshitv, 5, 1);
+        SetPulse(3.0);
+	return;
+
+pulse:
+        //if(GetCurFrame(water) == 0) 
+       MoveToFrame(water, 1, 0.5);
+ 
+sleep(1.0);
+
+       MoveToFrame(water, 0, 0.5);
+sleep(1.0);
+
+
+        //ClearSectorFlags(secfill2,0x2);
+        //SetSectorTint(secfill2, '0 0 0');          
+                      
+        return;
+activated:
+   water = GetSenderRef();
+   player = GetSourceRef(); 
+   print("Careful! It's a little moist!");  
+   Return;
+
+end
+

@@ -1,0 +1,24 @@
+# Jedi Knight Cog Script
+# player teleport
+# Shred18 20002
+
+symbols
+
+thing       player   local
+thing       door
+thing       ghost
+message     touched
+
+end
+
+
+code
+
+touched:
+   door = GetSenderRef();
+   player = GetSourceRef(); 
+   TeleportThing(player,ghost);  
+   Return;
+
+end
+

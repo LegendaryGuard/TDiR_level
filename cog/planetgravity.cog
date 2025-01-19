@@ -1,0 +1,50 @@
+# Jedi Knight Cog Script
+# walk on king kais planet, even upside-down.
+# Shred18 20002
+
+symbols
+
+thing       player   local
+thing       planet
+sector      sec1
+vector      dir      local
+message     entered
+message     exited
+message     pulse
+
+end
+
+
+code
+
+entered:
+       player = GetSourceRef();
+       if(sec1 == GetSenderRef())
+       {
+        SetPulse(0.1); 
+        //ClearThingAttachFlags(player,0x2); 
+	}
+Return;
+
+pulse:
+        if(GetAttachFlags(player) == 0x2) Return;
+        if(IsInvActivated(player,41) == 0)  
+{      
+        dir = VectorScale(VectorNorm(VectorSub(GetThingPos(planet), GetThingPos(player))), 50);
+        ClearPhysicsFlags(player, 0x1);
+        ApplyForce(player, dir); 
+}
+Return; 
+
+exited:
+      if(sec1 == GetSenderRef())
+       {
+        SetPulse(0);
+      if(IsInvActivated(player,41) == 0)
+{  
+        SetPhysicsFlags(player, 0x1); 
+}
+	}
+Return;
+end
+

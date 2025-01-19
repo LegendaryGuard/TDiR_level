@@ -1,0 +1,20 @@
+# Jedi Knight Cog Script
+# material change
+# Shred18 20002
+
+symbols
+
+material    box=stroombox.mat
+message     startup
+
+end
+
+
+code
+
+startup: 
+   MaterialAnim(box, 0.01, 1); 
+   Return;
+
+end
+

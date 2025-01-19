@@ -1,0 +1,26 @@
+# Jedi Knight Cog Script
+# activate the tv :D
+# Shred18 20002
+flags=0x240
+symbols
+
+thing       player   local
+thing       tv
+flex        damageguy=10 local
+#sound       tvsnd
+message     activated
+
+end
+
+
+code
+
+activated:
+   tv = GetSenderRef();
+   player = GetSourceRef(); 
+   print("Mesmerizing...");  
+   //PlaySoundThing(tvsnd, player, 1, -1, -1, 0x80);  
+   Return;
+
+end
+

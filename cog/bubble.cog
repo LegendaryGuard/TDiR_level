@@ -1,0 +1,22 @@
+# Jedi Knight Cog Script
+# lava bubble animation
+# Shred 2002
+
+symbols
+
+material    bubble=lavabubble.mat                
+
+message     startup
+
+end
+
+
+code
+
+startup: 
+   MaterialAnim(bubble, 8, 1); 
+
+   Return;
+
+end
+

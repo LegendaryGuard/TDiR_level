@@ -1,0 +1,136 @@
+# Randomize the Dragon Ball Spawn Points
+#
+# Created by Hell Raiser [Jon Harmon]
+
+symbols
+
+# This is the time (in seconds) that the DBs will respawn
+# once they are used to call the dragon
+
+flex		RespawnTime=10
+
+# These are here for when we have individual
+# DragonBall 3dos, for now, just make it the
+# usual thing
+
+template	DragonBall0
+template	DragonBall1
+template	DragonBall2
+template	DragonBall3
+template	DragonBall4
+template	DragonBall5
+template	DragonBall6
+
+# These are the positions that each DB will spawn at
+# If you don't use 'em all don't worry, just be sure
+# to use them in order
+
+thing		DBGhostPos0=-1
+thing		DBGhostPos1=-1
+thing		DBGhostPos2=-1
+thing		DBGhostPos3=-1
+thing		DBGhostPos4=-1
+thing		DBGhostPos5=-1
+thing		DBGhostPos6=-1
+thing		DBGhostPos7=-1
+thing		DBGhostPos8=-1
+thing		DBGhostPos9=-1
+thing		DBGhostPos10=-1
+thing		DBGhostPos11=-1
+thing		DBGhostPos12=-1
+thing		DBGhostPos13=-1
+thing		DBGhostPos14=-1
+thing		DBGhostPos15=-1
+thing		DBGhostPos16=-1
+thing		DBGhostPos17=-1
+thing		DBGhostPos18=-1
+thing		DBGhostPos19=-1
+
+# The rest is not important. =D
+
+int			DBPos0				local
+int			DBPos1				local
+int			DBPos2				local
+int			DBPos3				local
+int			DBPos4				local
+int			DBPos5				local
+int			DBPos6				local
+int			DBPos7				local
+int			DBPos8				local
+int			DBPos9				local
+int			DBPos10				local
+int			DBPos11				local
+int			DBPos12				local
+int			DBPos13				local
+int			DBPos14				local
+int			DBPos15				local
+int			DBPos16				local
+int			DBPos17				local
+int			DBPos18				local
+int			DBPos19				local
+
+int			DB0					local
+int			DB1					local
+int			DB2					local
+int			DB3					local
+int			DB4					local
+int			DB5					local
+int			DB6					local
+
+int			x					local
+int			DBGhostPosNum=0		local
+int			PosNum				local
+
+int			RandNum				local
+
+message		timer
+message		startup
+message		trigger
+
+end
+
+code
+
+startup:
+
+	DBGhostPosNum=0;
+
+	for(x=0; x<20; x=x+1)
+	{
+		if(DBGhostPos0[x] != -1)
+		{DBGhostPosNum=DBGhostPosNum+1;}
+	}
+
+	SetTimer(RespawnTime);
+
+return;
+
+timer:
+
+	for(x=0; x<DBGhostPosNum; x=x+1)
+	{DBPos0[x]=0;}
+	
+	for(x=0; x<7; x=x+1)
+	{
+		RandNum=DBGhostPosNum*rand(); //Random Number 0 <-> DBGhostPosNum-1
+		While(DBPos0[RandNum]==1)
+		{
+			RandNum=DBGhostPosNum*rand();
+		}
+		DBPos0[RandNum]=1;
+		DB0[x]=RandNum;
+	}
+
+	for(x=0; x<7; x=x+1)
+	{CreateThingNR(DragonBall0[x], DBGhostPos0[DB0[x]]);}
+
+return;
+
+trigger:
+
+	if(GetSourceRef() == 60000) //Sent after a wish is made
+	{SetTimer(RespawnTime);}
+
+return;
+
+end

@@ -1,0 +1,7 @@
+# Puppet file for crow
+joints
+7=1		# aim pitch
+8=2             # aim yaw
+end
+
+

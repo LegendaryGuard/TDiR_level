@@ -1,0 +1,23 @@
+# Jedi Knight Cog Script
+# activate the bush :D
+# Shred18 20002
+flags=0x240
+symbols
+
+thing       player   local
+thing       bush
+message     activated
+
+end
+
+
+code
+
+activated:
+   bush = GetSenderRef();
+   player = GetSourceRef(); 
+   print("Thats a nice plant alright. It hardly compares to your *special garden* though.");  
+   Return;
+
+end
+

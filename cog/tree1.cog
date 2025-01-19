@@ -1,0 +1,23 @@
+# Jedi Knight Cog Script
+# activate the window :D
+# Shred18 20002
+flags=0x240
+symbols
+
+thing       player   local
+thing       tree
+message     activated
+
+end
+
+
+code
+
+activated:
+   tree = GetSenderRef();
+   player = GetSourceRef(); 
+   print("Its a Tree!");  
+   Return;
+
+end
+

@@ -1,0 +1,26 @@
+# Jedi Knight Cog Script
+# get teleported back a ways when you fall.
+# Shred18 20002
+
+symbols
+
+thing       player   local
+sector      diesec
+thing       ghost 
+message     entered
+message     pulse
+
+end
+
+
+code
+
+entered:
+   diesec = GetSenderRef();
+   player = GetSourceRef(); 
+
+   TeleportThing(player, ghost);
+   Return;
+
+end
+

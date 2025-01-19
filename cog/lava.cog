@@ -1,0 +1,31 @@
+# Jedi Knight Cog Script
+# lava touched effect
+# Shred 2002
+
+symbols
+
+surface    lava
+flex       damage           
+
+message     touched
+message     pulse
+
+end
+
+
+code
+
+touched:
+player == GetSourceRef();
+if(GetAttachFlags(player) == 1)
+SetPulse(0.5);
+Return;
+
+pulse:
+DamageThing(player,damage,0x8,lava);
+if(GetAttachFlags(player) != 1)
+SetPulse(0);
+Return;
+
+end
+

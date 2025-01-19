@@ -1,0 +1,28 @@
+# Jedi Knight Cog Script
+# activate the stove :D
+# Shred18 20002
+flags=0x240
+symbols
+
+thing       player   local
+surface     freezer
+flex        damageguy=10 local
+sound       damagesnd
+message     activated
+
+end
+
+
+code
+
+activated:
+   freezer = GetSenderRef();
+   player = GetSourceRef(); 
+   print("Ouch! Hot!!");
+   DamageThing(player,damageguy,0x8,player);
+   AddDynamicTint(player, 255, 0, 0);  
+   PlaySoundThing(damagesnd, player, 1, -1, -1, 0x80);  
+   Return;
+
+end
+

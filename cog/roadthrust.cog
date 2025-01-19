@@ -1,0 +1,25 @@
+# Jedi Knight Cog Script
+# for the boost pads
+# Shred18 20002
+
+symbols
+
+thing       player   local 
+sector      thrustsec
+message     entered
+message     pulse
+
+end
+
+
+code
+
+entered:
+   thrustsec = GetSenderRef();
+   player = GetSourceRef(); 
+
+   AddThingVel(player, VectorScale(GetThingLVec(player), 20));
+   Return;
+
+end
+

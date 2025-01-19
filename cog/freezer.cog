@@ -1,0 +1,28 @@
+# Jedi Knight Cog Script
+# activate the fridge :D
+# Shred18 20002
+flags=0x240
+symbols
+
+thing       player   local
+surface     freezer
+flex        healup=10 local
+sound       healsnd
+message     activated
+
+end
+
+
+code
+
+activated:
+   freezer = GetSenderRef();
+   player = GetSourceRef(); 
+   print("Yum!! Health +10");
+   HealThing(player,healup);
+   AddDynamicTint(player, 255, 255, 255); 
+   PlaySoundThing(healsnd, player, 1, -1, -1, 0x80);  
+   Return;
+
+end
+

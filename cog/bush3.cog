@@ -1,0 +1,23 @@
+# Jedi Knight Cog Script
+# activate the bush :D
+# Shred18 20002
+flags=0x240
+symbols
+
+thing       player   local
+thing       bush
+message     activated
+
+end
+
+
+code
+
+activated:
+   bush = GetSenderRef();
+   player = GetSourceRef(); 
+   print("You admire the great abilities of the artist who made this bush.");  
+   Return;
+
+end
+

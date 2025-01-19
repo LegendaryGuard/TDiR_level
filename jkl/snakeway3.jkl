@@ -1,0 +1,2225 @@
+#This file has been modified by TDiR Level Converter 1.0 06-16-2003 17:08:05
+#TDiR Level Converter is (c)2002 Hell Raiser [Jon Harmon]
+#This file is created by Jed version 0.951 beta
+#Jed is (C) by Alexei Novikov
+
+SECTION: JK
+
+SECTION: COPYRIGHT
+................................
+................@...@...@...@...
+.............@...@..@..@...@....
+................@.@.@.@.@.@.....
+@@@@@@@@......@...........@.....
+@@@@@@@@....@@......@@@....@....
+@@.....@.....@......@@@.....@@..
+@@.@@@@@......@.....@@@......@@.
+@@@@@@@@.......@....@@.....@@...
+@@@@@@@@.........@@@@@@@@@@.....
+@@@@@@@@..........@@@@@@........
+@@.....@..........@@@@@.........
+@@.@@@@@.........@@@@@@.........
+@@.....@.........@@@@@@.........
+@@@@@@@@.........@@@@@@.........
+@@@@@@@@.........@@@@@@@........
+@@@...@@.........@@@@@@@........
+@@.@@@.@.........@.....@........
+@@..@..@........@.......@.......
+@@@@@@@@........@.......@.......
+@@@@@@@@.......@........@.......
+@@..@@@@.......@........@.......
+@@@@..@@......@.........@.......
+@@@@.@.@......@.........@.......
+@@....@@........................
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@.@@@@@@@@@@@@@@@@@@
+@@.@@..@@@@@..@@@@@@@@@@.@@@@@@@
+@@.@.@.@@@@.@.@@@.@..@@...@@@..@
+@@..@@@@@@....@@@..@@@@@.@@@@.@@
+@@@@@@@@...@@.@@@.@@@@@..@@...@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@.copyright.(c).1997.lucasarts.@
+@@@@@@..entertainment.co..@@@@@@
+
+SECTION: HEADER
+Version 1
+World Gravity 4
+Ceiling Sky Z 15
+Horizon Distance 100
+Horizon Pixels per Rev 768
+Horizon Sky Offset 0 0
+Ceiling Sky Offset 0 0
+MipMap Distances 1 2 3 4
+LOD Distances .3 .6 .9 1.2
+Perspective distance 2
+Gouraud distance 2
+
+SECTION: SOUNDS
+World sounds 219
+activate01.wav
+activate04.wav
+BactaPu1.wav
+BactaUse01.WAV
+BCChargeUp.wav
+BCFire01.wav
+BCFire02.wav
+bodyfall03.wav
+concuss1.wav
+concuss5.wav
+CRPickup01.WAV
+deactivate03.wav
+deactivate04.wav
+df_bry_ready.wav
+df_rif_ready.wav
+expl_06.wav
+expl_07.wav
+expl_09.wav
+ForceAbsorb02.WAV
+ForceBlind01.WAV
+ForceDestruct01.wav
+ForceDestruct02.wav
+ForceDSight01.WAV
+ForceDSight02.WAV
+ForceGrip01.WAV
+ForceHealing01.WAV
+ForceJump01.wav
+ForceJump02.wav
+ForceLitning02.wav
+ForcePersuas01.WAV
+ForcePersuas02.WAV
+ForceProtect01.wav
+ForceProtect02.wav
+ForcePull01.WAV
+ForceSee01.WAV
+ForceSee02.WAV
+ForceSpeed01.WAV
+ForceSpeed02.WAV
+ForceThrow01.WAV
+fsout1.wav
+fswtr1l.wav
+fswtr2l.wav
+fswtr2r.wav
+i00ky106.wav
+i00ky71t.wav
+i00ky86z.wav
+jumpbasic01.wav
+jumpDirt01.wav
+jumpMetalDry01.wav
+KbodyHit01.wav
+KShieldHit01.wav
+KWaterDeath1.wav
+kylgnb.wav
+kylgtla.wav
+kylgtlb.wav
+kylgtlc.wav
+kylgtsa.wav
+kylgtsb.wav
+kylgtsc.wav
+kyljpa.wav
+kyljpd.wav
+kylyld.wav
+landbasic01.wav
+landDirt01.wav
+landhard01.wav
+landmetaldry01.wav
+LtSaberBodyHit01.wav
+LtSaberHit01.WAV
+LtSaberHit02.WAV
+LtSaberHit03.WAV
+LtSaberHit05.wav
+LtSaberHit06.wav
+LtSaberHit07.wav
+LtSaberHit12.WAV
+LtSaberHit14.WAV
+LtSaberHit15.wav
+LtSaberLp01.WAV
+LtSaberOff01.WAV
+LtSaberOn01.WAV
+LtSaberSwing01.WAV
+LtSaberSwing02.WAV
+LtSaberSwing03.WAV
+LtSaberSwing04.WAV
+LtSaberSwing05.WAV
+LtSaberSwing06.WAV
+LtSaberSwing07.WAV
+LtSaberSwing08.WAV
+LtSaberSwingDbl01.WAV
+pistol-1.wav
+pistout1.wav
+ploop01.wav
+powerpu1.wav
+Punch03.wav
+PutWeaponAway01.wav
+RailChargeArm01.WAV
+RailChargeAttach.WAV
+RailChargeEmpty01.WAV
+RailChargeFire01.WAV
+RailChargeFly01.WAV
+repeat-1.wav
+ReptrRico01.wav
+ricochet01.wav
+ricochet02.wav
+ricochet03.wav
+rpeatrlp.wav
+rundirt01.wav
+rundirt02.wav
+runmetaldry01.wav
+runmetaldry02.wav
+SChargeCountdown02.wav
+SChargePlace01.WAV
+ShotHit01.wav
+ShotHit02.wav
+splash1.wav
+stroke1.wav
+stroke2.wav
+SwingFist01.wav
+SwingFist04.wav
+thermal1.wav
+ThermalThrow01.wav
+ThermClick01.wav
+ThermClick02.wav
+ThermLoop01.wav
+trprout.wav
+trprsht2.wav
+walkdirt01.wav
+walkdirt02.wav
+walkmetaldry01.wav
+walkmetaldry02.wav
+auraloop.wav
+Aurastart.wav
+ballcharge.wav
+ballfire.wav
+beamcharge.wav
+beamcharge2.wav
+beamexp.wav
+beamfire.wav
+beamloop.wav
+beamloop2.wav
+bigbang2.wav
+bigbangcharge.wav
+blast.wav
+breathe.wav
+breathe2.wav
+curses.wav
+disperse.wav
+disperse2.wav
+electricty.wav
+engageng.wav
+explosion.wav
+explosion2.wav
+explosion3.wav
+expsmall.wav
+fastpunch.wav
+finalflash.wav
+frieza1.wav
+frieza2.wav
+frieza3.wav
+frieza6.wav
+frieza8.wav
+goku1.wav
+goku6.wav
+goku9.wav
+gokut.wav
+granted.wav
+groundslam.wav
+hithigh.wav
+hitlow.wav
+hitmed.wav
+iamveg.wav
+jump1.wav
+jump2.wav
+kaiokenloop.wav
+kame2.wav
+kamebk.wav
+kaoken.wav
+kiblast.wav
+kwalk01.wav
+kwalk02.wav
+kylerun01.wav
+kylerun02.wav
+laser2.wav
+laser3.wav
+lazer6.wav
+longbarrel.wav
+masenko.wav
+meleehit0.wav
+meleehit1.wav
+meleehit2.wav
+meleehit3.wav
+meow.wav
+nimbus1.wav
+none.wav
+plasma4.wav
+powerdown.wav
+renfire.wav
+Renzoku.wav
+rumble.wav
+sayonora.wav
+sbcfire.wav
+shenlong.wav
+solar.wav
+spirit.wav
+ssgohan.wav
+ssshield.wav
+sstrunks.wav
+swingfist01.wav
+swingfist02.wav
+swingfist03.wav
+swinghigh.wav
+swinglow.wav
+swingmed.wav
+theme.wav
+thermloop01.wav
+thrmlpu2.wav
+veg11.wav
+vegetat.wav
+zan.wav
+zanzoken.wav
+end
+
+SECTION: MATERIALS
+World materials 161
+0: 00explosion.mat 1 1
+1: 00gsmoke.mat 1 1
+2: 00ramp1.mat 1 1
+3: 00ramp2.mat 1 1
+4: 00ramp4.mat 1 1
+5: 00teleport.mat 1 1
+6: 00twinkle.mat 1 1
+7: BOW0SIDE.MAT 1 1
+8: BOW0TOP.MAT 1 1
+9: BOW1SIDE.MAT 1 1
+10: BOWPBALL.MAT 1 1
+11: BOWPBAR1.MAT 1 1
+12: BOWPBAR2.MAT 1 1
+13: BOWPGRIP.MAT 1 1
+14: BOWPPRT1.MAT 1 1
+15: BOWPPRT2.MAT 1 1
+16: BOWPSCP1.MAT 1 1
+17: BOWPSCP2.MAT 1 1
+18: BOWPSIDE.MAT 1 1
+19: BOWPSTK1.MAT 1 1
+20: BOWPSTK2.MAT 1 1
+21: BOWPTOP.MAT 1 1
+22: bowx.mat 1 1
+23: BPCK1.MAT 1 1
+24: BPCK2.MAT 1 1
+25: BPCK3.MAT 1 1
+26: BPCK4.MAT 1 1
+27: BRY0SIDE.MAT 1 1
+28: BRY0TOP.MAT 1 1
+29: BRY1TOP.MAT 1 1
+30: BRYPBLFT.MAT 1 1
+31: BRYPBLSD.MAT 1 1
+32: BRYPBLTP.MAT 1 1
+33: BRYPCLBK.MAT 1 1
+34: BRYPCLSD.MAT 1 1
+35: BRYPCLTP.MAT 1 1
+36: BRYPGRIP.MAT 1 1
+37: BRYPPORT.MAT 1 1
+38: BRYPPRFT.MAT 1 1
+39: BRYPSIDE.MAT 1 1
+40: BRYVFSD.MAT 1 1
+41: BRYVFTP.MAT 1 1
+42: BRYVGNBK.MAT 1 1
+43: BRYVGNTP.MAT 1 1
+44: BRYVGSGF.MAT 1 1
+45: BRYVGSGT.MAT 1 1
+46: BRYVRSD.MAT 1 1
+47: bryx.mat 1 1
+48: bubble.mat 1 1
+49: con0side.mat 1 1
+50: con0top.mat 1 1
+51: CONPCLIP.MAT 1 1
+52: CONPFRNT.MAT 1 1
+53: CONPSIDE.MAT 1 1
+54: CONPTOP.MAT 1 1
+55: CONVBRL1.MAT 1 1
+56: CONVBRL2.MAT 1 1
+57: CONVBRL3.MAT 1 1
+58: CONVBUTP.MAT 1 1
+59: CONVBUTT.MAT 1 1
+60: CONVCLBK.MAT 1 1
+61: CONVCLIP.MAT 1 1
+62: CONVGRIL.MAT 1 1
+63: CONVGRIP.MAT 1 1
+64: CONVTOP.MAT 1 1
+65: conx.mat 1 1
+66: DEATHSTATIONTEX.MAT 1 1
+67: debrisx.mat 1 1
+68: destruct8.mat 1 1
+69: DET.MAT 1 1
+70: det0metl.mat 1 1
+71: det0side.mat 1 1
+72: detx.mat 1 1
+73: dflt.mat 1 1
+74: dstructparts.mat 1 1
+75: dusty.mat 1 1
+76: forceDstruct.mat 1 1
+77: HDBACK.MAT 1 1
+78: HDBOTTOM.MAT 1 1
+79: HDFTIP.MAT 1 1
+80: HDGRIP.MAT 1 1
+81: HDINSID1.MAT 1 1
+82: HDSDTHUM.MAT 1 1
+83: HND-WRT.MAT 1 1
+84: KAIPLANETTEX.MAT 1 1
+85: KAIPLANETTEX2.MAT 1 1
+86: kybodyb.mat 1 1
+87: kybodyf2.mat 1 1
+88: kybutt.mat 1 1
+89: kyface3.mat 1 1
+90: kyfaceb.mat 1 1
+91: kyfacesd.mat 1 1
+92: kyfacetp.mat 1 1
+93: kyfoot.mat 1 1
+94: kyforarm.mat 1 1
+95: KYHAND.MAT 1 1
+96: KYHANDF.MAT 1 1
+97: kyhip.mat 1 1
+98: kyleg.mat 1 1
+99: kyneck.mat 1 1
+100: KYRARM.MAT 1 1
+101: KYSABER.MAT 1 1
+102: kyshotop.mat 1 1
+103: kyshpad.mat 1 1
+104: kysole.mat 1 1
+105: kythigh.mat 1 1
+106: LIGT3.MAT 1 1
+107: ORANGECLOUD.MAT 1 1
+108: RLD0CLMP.MAT 1 1
+109: RLDVBDSD.MAT 1 1
+110: RLDVBDTP.MAT 1 1
+111: RLDVBRL1.MAT 1 1
+112: RLDVBRL2.MAT 1 1
+113: RLDVBRL3.MAT 1 1
+114: rldvbutt.mat 1 1
+115: RLDVCHM1.MAT 1 1
+116: RLDVCHM2.MAT 1 1
+117: RLDVCHM3.MAT 1 1
+118: RLDVCLP2.MAT 1 1
+119: RLDVPRJF.MAT 1 1
+120: RLDVPRJS.MAT 1 1
+121: rldvsgt.mat 1 1
+122: rldx.mat 1 1
+123: RPT0TOP.MAT 1 1
+124: RPTPBUT1.MAT 1 1
+125: RPTPBUT2.MAT 1 1
+126: RPTPGRIL.MAT 1 1
+127: RPTPSIDE.MAT 1 1
+128: RPTPTOP.MAT 1 1
+129: RPTPUNDR.MAT 1 1
+130: RPTVBACK.MAT 1 1
+131: rptx.mat 1 1
+132: seq0mbck.mat 1 1
+133: SEQ0MTP1.MAT 1 1
+134: seq0mtp3.mat 1 1
+135: seq0side.mat 1 1
+136: seq0top.mat 1 1
+137: SEQVMTP2.MAT 1 1
+138: seqvsd.mat 1 1
+139: seqvsid2.mat 1 1
+140: seqvtop2.mat 1 1
+141: seqx2.mat 1 1
+142: SHRP.MAT 1 1
+143: snakewaybox.mat 1 1
+144: SNAKEWAYTEX.MAT 1 1
+145: sparky.mat 1 1
+146: SplashX.mat 1 1
+147: Splooshx.mat 1 1
+148: STR0SIDE.MAT 1 1
+149: STR0TOP.MAT 1 1
+150: STRPGRIP.MAT 1 1
+151: strpport.mat 1 1
+152: strpsitf.mat 1 1
+153: STRVBRL4.MAT 1 1
+154: strvbutt.mat 1 1
+155: STRVCLP.MAT 1 1
+156: strvsid1.mat 1 1
+157: strvsid2.mat 1 1
+158: strvsitb.mat 1 1
+159: strvsite.mat 1 1
+160: strvtop2.mat 1 1
+end
+
+SECTION: GEORESOURCE
+World Colormaps 2
+0: 01narsh.cmp
+1: dflt.cmp
+
+World vertices 64
+#num:	vertex:
+0: -80 80 80
+1: -55.892308 -80 80
+2: -55.892308 80 80
+3: -80 80 55.339016
+4: -61.142857 -80 80
+5: -80 -58 80
+6: -80 -58 55.339016
+7: -61.142857 -80 74.628946
+8: -80 -23.690943 55.339016
+9: -55.892308 -48.110564 80
+10: 640 640 640
+11: 640 640 -640
+12: -640 640 -640
+13: -640 640 640
+14: 80 80 -80
+15: -80 80 -80
+16: 80 80 80
+17: 640 -640 -640
+18: 640 -640 640
+19: -640 -640 640
+20: -640 -640 -640
+21: -80 -80 -80
+22: 80 -80 -80
+23: 80 -80 80
+24: -80 -80 80
+25: -80 -80 55.339016
+26: -24.410219 -80 -80
+27: -24.410219 -80 80
+28: -80 -80 23.8
+29: -24.410219 -80 23.8
+30: -80 -23.690943 -80
+31: -80 -23.690943 23.8
+32: 0 0 176
+33: 1431.6 80 -80
+34: 1399.4 80 -80
+35: 1399.4 80 -63.751402
+36: 1431.6 80 -63.751402
+37: 1431.6 60.894505 -80
+38: 1428.058242 60.894505 -80
+39: 1991.6 640 640
+40: 1991.6 640 -640
+41: 711.6 640 -640
+42: 711.6 640 640
+43: 1271.6 80 -80
+44: 1271.6 80 80
+45: 1431.6 80 80
+46: 1399.4 80 80
+47: 1367.535873 80 -80
+48: 1367.535873 80 80
+49: 1991.6 -640 -640
+50: 1991.6 -640 640
+51: 711.6 -640 640
+52: 711.6 -640 -640
+53: 1271.6 -80 -80
+54: 1431.6 -80 -80
+55: 1431.6 -80 80
+56: 1271.6 -80 80
+57: 1431.6 58.533333 80
+58: 1431.6 58.533333 -80
+59: 1431.6 31.837232 -80
+60: 1431.6 31.837232 80
+61: 1351.6 0 176
+62: 0 0 0
+63: 1351.6 0 0
+
+World texture vertices 56
+#num:	u:	v:
+0: 0 0
+1: 5542.56 0
+2: 4525.48 3200
+3: 923.76 2612.79
+4: 924.91 2611.16
+5: 937.04 2611.16
+6: 927.8 2624.22
+7: 14400 2262.74
+8: 14402 2262.74
+9: 14409 2272.64
+10: 14393 2272.64
+11: -768 -243.52
+12: -768 2.24
+13: -1013.76 2.24
+14: -1013.76 -243.52
+15: 2771.28 0
+16: 3200 18101.93
+17: 24890.16 14400
+18: 24900.06 14393
+19: 24900.06 14409
+20: 24890.16 14402
+21: -1505.28 2.24
+22: -1505.28 -243.52
+23: -1259.52 -243.52
+24: -1259.52 2.24
+25: 2 0
+26: 2 2
+27: 0 2
+28: 14400 20364.68
+29: 14393 20354.78
+30: 14409 20354.78
+31: 14402 20364.68
+32: 5554.69 0
+33: 5555.84 1.63
+34: 5551.8 13.06
+35: 3200 4525.48
+36: -1751.04 2.24
+37: -1751.04 -243.52
+38: 7390.08 20902.31
+39: 7386.03 20890.88
+40: 7387.18 20889.25
+41: 7399.31 20889.24
+42: -1013.76 -477.28
+43: -1013.76 -508
+44: -1044.48 -508
+45: -1044.48 -477.28
+46: -1511.28 148.24
+47: -1511.28 178.96
+48: -1542 178.96
+49: -1542 148.24
+50: -1013.76 -436.32
+51: -1054.72 -436.32
+52: -1054.72 -477.28
+53: -1511.28 189.2
+54: -1552.24 189.2
+55: -1552.24 148.24
+
+World adjoins 142
+#num:	flags:	mirror:	dist:
+0: 0x5 12 98.78
+1: 0x5 42 7.94
+2: 0x5 33 11
+3: 0x5 19 61.22
+4: 0x7 121 3.82
+5: 0x7 107 33.88
+6: 0x7 98 3.82
+7: 0x5 123 224
+8: 0x5 39 205.39
+9: 0x5 28 205.35
+10: 0x5 48 224.53
+11: 0x5 23 224.57
+12: 0x5 0 224
+13: 0x7 127 140
+14: 0x5 37 140.64
+15: 0x5 31 137.38
+16: 0x5 45 170.48
+17: 0x5 26 173.75
+18: 0x5 104 140
+19: 0x5 3 140
+20: 0x5 133 140
+21: 0x5 99 140
+22: 0x5 125 280
+23: 0x5 11 254.56
+24: 0x5 40 254.56
+25: 0x5 46 254.56
+26: 0x5 17 254.56
+27: 0x5 124 140
+28: 0x5 9 167.37
+29: 0x5 38 143.68
+30: 0x5 47 167.45
+31: 0x5 15 143.76
+32: 0x5 105 140
+33: 0x5 2 140
+34: 0x5 131 140
+35: 0x7 100 140
+36: 0x5 122 155.73
+37: 0x5 14 154.14
+38: 0x5 29 150.98
+39: 0x5 8 179.23
+40: 0x5 24 182.4
+41: 0x5 106 155.73
+42: 0x5 1 155.73
+43: 0x5 97 155.73
+44: 0x5 126 224
+45: 0x5 16 207.63
+46: 0x5 25 222.34
+47: 0x5 30 207.58
+48: 0x5 10 222.29
+49: 0x5 132 224
+50: 0x5 61 6.37
+51: 0x5 74 11.32
+52: 0x5 94 5.42
+53: 0x7 109 6.28
+54: 0x7 120 4.13
+55: 0x5 136 160
+56: 0x7 84 176.15
+57: 0x7 77 182.6
+58: 0x7 92 163.27
+59: 0x7 69 156.81
+60: 0x5 118 160
+61: 0x5 50 160
+62: 0x7 112 160
+63: 0x5 140 280
+64: 0x7 82 254.56
+65: 0x7 80 254.56
+66: 0x7 89 254.56
+67: 0x7 72 254.56
+68: 0x5 138 160
+69: 0x7 59 153.46
+70: 0x7 85 176.97
+71: 0x7 90 162.45
+72: 0x7 67 185.95
+73: 0x5 117 160
+74: 0x5 51 160
+75: 0x7 111 160
+76: 0x5 137 280
+77: 0x7 57 254.56
+78: 0x7 83 254.56
+79: 0x7 91 254.56
+80: 0x7 65 254.56
+81: 0x5 135 179.69
+82: 0x7 64 197.25
+83: 0x7 78 195.8
+84: 0x7 56 170.01
+85: 0x7 70 171.46
+86: 0x7 119 179.69
+87: 0x7 113 179.69
+88: 0x5 139 160
+89: 0x7 66 188.5
+90: 0x7 71 150.5
+91: 0x7 79 188.91
+92: 0x7 58 150.91
+93: 0x7 116 160
+94: 0x5 52 160
+95: 0x7 110 160
+96: 0x7 103 12.84
+97: 0x5 43 24.8
+98: 0x7 6 12.84
+99: 0x5 21 16.65
+100: 0x7 35 17.83
+101: 0x7 129 15.18
+102: 0x7 134 31.4
+103: 0x7 96 6.37
+104: 0x5 18 7.33
+105: 0x5 32 6.29
+106: 0x5 41 9.12
+107: 0x7 5 4.77
+108: 0x7 115 7.98
+109: 0x7 53 7.98
+110: 0x7 95 65.62
+111: 0x7 75 22.83
+112: 0x7 62 15.84
+113: 0x7 87 94.38
+114: 0x7 141 12.12
+115: 0x7 108 4.71
+116: 0x7 93 64.06
+117: 0x5 73 8.49
+118: 0x5 60 10.14
+119: 0x7 86 95.94
+120: 0x7 54 42.99
+121: 0x7 4 75.88
+122: 0x5 36 69.45
+123: 0x5 7 87.95
+124: 0x5 27 62.33
+125: 0x5 22 97.67
+126: 0x5 44 90.55
+127: 0x7 13 72.05
+128: 0x7 130 55.42
+129: 0x7 101 55.42
+130: 0x7 128 13.19
+131: 0x5 34 18.53
+132: 0x5 49 51.9
+133: 0x5 20 18.77
+134: 0x7 102 51.9
+135: 0x5 81 80
+136: 0x5 55 74.21
+137: 0x5 76 82.9
+138: 0x5 68 77.1
+139: 0x5 88 80
+140: 0x5 63 85.79
+141: 0x7 114 67.15
+
+World surfaces 154
+#num:   mat:     surfflags:	faceflags:	geo:	light:	tex:	adjoin:	extralight:	nverts:	vertices:			intensities:
+0:	73	0x4	0x0	0	3	1	0	0	3 2,0 0,0 3,0 5 5 5
+1:	73	0x4	0x0	0	3	1	1	0	6 9,0 1,0 4,0 5,0 0,0 2,0 5 5 5 5 5 5
+2:	73	0x4	0x0	0	3	1	2	0	5 8,0 3,0 0,0 5,0 6,0 5 5 5 5 5
+3:	73	0x4	0x0	0	3	1	3	0	3 4,0 1,0 7,0 5 5 5
+4:	73	0x0	0x0	0	3	1	4	0	4 9,0 2,0 3,0 8,0 5 5 5 5
+5:	73	0x0	0x0	0	3	1	5	0	4 5,0 4,0 7,0 6,0 5 5 5 5
+6:	73	0x0	0x0	0	3	1	6	0	5 7,0 1,0 9,0 8,0 6,0 5 5 5 5 5
+7:	73	0x4	0x0	0	3	1	7	0	5 14,0 15,0 3,0 2,0 16,0 5 5 5 5 5
+8:	73	0x4	0x0	0	3	1	8	0	5 10,1 16,1 2,1 0,1 13,1 5 5 5 5 5
+9:	73	0x4	0x0	0	3	1	9	0	5 13,2 0,2 3,2 15,2 12,2 5 5 5 5 5
+10:	73	0x4	0x0	0	3	1	10	0	4 15,3 14,4 11,5 12,6 5 5 5 5
+11:	73	0x4	0x0	0	3	1	11	0	4 14,7 16,8 10,9 11,10 5 5 5 5
+12:	143	0x4	0x4	4	3	1	-1	0	4 13,11 12,12 11,13 10,14 5 5 5 5
+13:	73	0x4	0x0	0	3	1	12	0	3 3,0 0,0 2,0 5 5 5
+14:	73	0x0	0x0	0	3	1	13	0	5 29,0 26,0 22,0 23,0 27,0 5 5 5 5 5
+15:	73	0x4	0x0	0	3	1	14	0	7 4,15 1,15 27,15 23,15 18,15 19,15 24,15 5 5 5 5 5 5 5
+16:	73	0x4	0x0	0	3	1	15	0	6 20,16 21,16 28,16 25,16 24,16 19,16 5 5 5 5 5 5
+17:	73	0x4	0x0	0	3	1	16	0	5 26,15 21,15 20,15 17,15 22,15 5 5 5 5 5
+18:	73	0x4	0x0	0	3	1	17	0	4 22,17 17,18 18,19 23,20 5 5 5 5
+19:	143	0x4	0x4	4	3	1	-1	0	4 20,21 19,22 18,23 17,24 5 5 5 5
+20:	73	0x4	0x0	0	3	1	18	0	4 25,0 7,0 4,0 24,0 5 5 5 5
+21:	73	0x4	0x0	0	3	1	19	0	3 7,0 1,0 4,0 5 5 5
+22:	73	0x4	0x0	0	3	1	20	0	4 28,0 21,0 26,0 29,0 5 5 5 5
+23:	73	0x4	0x0	0	3	1	21	0	6 7,0 25,0 28,0 29,0 27,0 1,0 5 5 5 5 5 5
+24:	73	0x4	0x0	0	3	1	22	0	4 23,0 22,25 14,26 16,27 5 5 5 5
+25:	73	0x4	0x0	0	3	1	23	0	4 14,28 11,29 10,30 16,31 5 5 5 5
+26:	73	0x4	0x0	0	3	1	24	0	4 16,28 10,29 18,30 23,31 5 5 5 5
+27:	73	0x4	0x0	0	3	1	25	0	4 11,1 14,32 22,33 17,34 5 5 5 5
+28:	73	0x4	0x0	0	3	1	26	0	4 23,17 18,18 17,19 22,20 5 5 5 5
+29:	143	0x4	0x4	4	3	1	-1	0	4 10,14 11,13 17,24 18,23 5 5 5 5
+30:	73	0x4	0x0	0	3	1	27	0	5 30,0 31,0 8,0 3,0 15,0 5 5 5 5 5
+31:	73	0x4	0x0	0	3	1	28	0	5 12,2 15,2 3,2 0,2 13,2 5 5 5 5 5
+32:	73	0x4	0x0	0	3	1	29	0	5 5,28 24,28 19,28 13,28 0,28 5 5 5 5 5
+33:	73	0x4	0x0	0	3	1	30	0	5 12,35 20,35 21,35 30,35 15,35 5 5 5 5 5
+34:	73	0x4	0x0	0	3	1	31	0	6 25,28 28,28 21,28 20,28 19,28 24,28 5 5 5 5 5 5
+35:	143	0x4	0x4	4	3	1	-1	0	4 12,36 13,37 19,22 20,21 5 5 5 5
+36:	73	0x4	0x0	0	3	1	32	0	4 25,0 24,0 5,0 6,0 5 5 5 5
+37:	73	0x4	0x0	0	3	1	33	0	5 5,0 0,0 3,0 8,0 6,0 5 5 5 5 5
+38:	73	0x4	0x0	0	3	1	34	0	4 30,0 21,0 28,0 31,0 5 5 5 5
+39:	73	0x0	0x0	0	3	1	35	0	5 28,0 25,0 6,0 8,0 31,0 5 5 5 5 5
+40:	73	0x4	0x0	0	3	1	36	0	5 16,0 2,0 9,0 27,0 23,0 5 5 5 5 5
+41:	73	0x4	0x0	0	3	1	37	0	7 19,35 18,35 23,35 27,35 1,35 4,35 24,35 5 5 5 5 5 5 5
+42:	73	0x4	0x0	0	3	1	38	0	5 19,38 24,38 5,38 0,38 13,38 5 5 5 5 5
+43:	73	0x4	0x0	0	3	1	39	0	5 13,1 0,1 2,1 16,1 10,1 5 5 5 5 5
+44:	73	0x4	0x0	0	3	1	40	0	4 10,38 16,39 23,40 18,41 5 5 5 5
+45:	143	0x4	0x4	4	3	1	-1	0	4 18,42 19,43 13,44 10,45 5 5 5 5
+46:	73	0x4	0x0	0	3	1	41	0	3 5,0 24,0 4,0 5 5 5
+47:	73	0x4	0x0	0	3	1	42	0	6 9,0 2,0 0,0 5,0 4,0 1,0 5 5 5 5 5 5
+48:	73	0x4	0x0	0	3	1	43	0	3 9,0 1,0 27,0 5 5 5
+49:	73	0x4	0x0	0	3	1	44	0	5 15,0 14,0 22,0 26,0 30,0 5 5 5 5 5
+50:	73	0x4	0x0	0	3	1	45	0	5 17,35 20,35 21,35 26,35 22,35 5 5 5 5 5
+51:	73	0x4	0x0	0	3	1	46	0	4 17,1 22,32 14,33 11,34 5 5 5 5
+52:	73	0x4	0x0	0	3	1	47	0	5 30,15 21,15 20,15 12,15 15,15 5 5 5 5 5
+53:	73	0x4	0x0	0	3	1	48	0	4 15,28 12,29 11,30 14,31 5 5 5 5
+54:	143	0x4	0x4	4	3	1	-1	0	4 20,46 17,47 11,48 12,49 5 5 5 5
+55:	73	0x4	0x0	0	3	1	49	0	3 26,0 21,0 30,0 5 5 5
+56:	73	0x4	0x0	0	3	1	50	0	4 35,0 34,0 33,0 36,0 5 5 5 5
+57:	73	0x4	0x0	0	3	1	51	0	3 36,0 33,0 37,0 5 5 5
+58:	73	0x4	0x0	0	3	1	52	0	4 37,0 33,0 34,0 38,0 5 5 5 5
+59:	73	0x0	0x0	0	3	1	53	0	3 35,0 38,0 34,0 5 5 5
+60:	73	0x0	0x0	0	3	1	54	0	4 35,0 36,0 37,0 38,0 5 5 5 5
+61:	73	0x4	0x0	0	3	1	55	0	4 47,0 43,0 44,0 48,0 5 5 5 5
+62:	73	0x0	0x0	0	3	1	56	0	6 39,1 45,1 46,1 48,1 44,1 42,1 5 5 5 5 5 5
+63:	73	0x0	0x0	0	3	1	57	0	4 42,2 44,2 43,2 41,2 5 5 5 5
+64:	73	0x0	0x0	0	3	1	58	0	6 43,3 47,3 34,3 33,3 40,3 41,3 5 5 5 5 5 5
+65:	73	0x0	0x0	0	3	1	59	0	5 33,7 36,7 45,7 39,7 40,7 5 5 5 5 5
+66:	143	0x4	0x4	4	3	1	-1	0	4 42,11 41,12 40,13 39,14 5 5 5 5
+67:	73	0x4	0x0	0	3	1	60	0	4 35,0 46,0 45,0 36,0 5 5 5 5
+68:	73	0x4	0x0	0	3	1	61	0	4 33,0 34,0 35,0 36,0 5 5 5 5
+69:	73	0x0	0x0	0	3	1	62	0	5 35,0 34,0 47,0 48,0 46,0 5 5 5 5 5
+70:	73	0x4	0x0	0	3	1	63	0	4 53,0 54,0 55,0 56,0 5 5 5 5
+71:	73	0x0	0x0	0	3	1	64	0	4 55,15 50,15 51,15 56,15 5 5 5 5
+72:	73	0x0	0x0	0	3	1	65	0	4 52,16 53,16 56,16 51,16 5 5 5 5
+73:	73	0x0	0x0	0	3	1	66	0	4 53,15 52,15 49,15 54,15 5 5 5 5
+74:	73	0x0	0x0	0	3	1	67	0	4 54,17 49,17 50,17 55,17 5 5 5 5
+75:	143	0x4	0x4	4	3	1	-1	0	4 52,21 51,22 50,23 49,24 5 5 5 5
+76:	73	0x4	0x0	0	3	1	68	0	4 60,0 55,0 54,0 59,0 5 5 5 5
+77:	73	0x0	0x0	0	3	1	69	0	5 36,28 33,28 40,28 39,28 45,28 5 5 5 5 5
+78:	73	0x0	0x0	0	3	1	70	0	6 60,28 57,28 45,28 39,28 50,28 55,28 5 5 5 5 5 5
+79:	73	0x0	0x0	0	3	1	71	0	7 40,1 33,1 37,1 58,1 59,1 54,1 49,1 5 5 5 5 5 5 5
+80:	73	0x0	0x0	0	3	1	72	0	4 55,17 50,17 49,17 54,17 5 5 5 5
+81:	143	0x4	0x4	4	3	1	-1	0	4 39,14 40,13 49,24 50,23 5 5 5 5
+82:	73	0x4	0x0	0	3	1	73	0	5 57,0 58,0 37,0 36,0 45,0 5 5 5 5 5
+83:	73	0x4	0x0	0	3	1	74	0	3 37,0 33,0 36,0 5 5 5
+84:	73	0x0	0x0	0	3	1	75	0	4 57,0 60,0 59,0 58,0 5 5 5 5
+85:	73	0x4	0x0	0	3	1	76	0	4 53,0 56,0 44,0 43,0 5 5 5 5
+86:	73	0x0	0x0	0	3	1	77	0	4 41,2 43,2 44,2 42,2 5 5 5 5
+87:	73	0x0	0x0	0	3	1	78	0	4 56,28 51,28 42,28 44,28 5 5 5 5
+88:	73	0x0	0x0	0	3	1	79	0	4 41,35 52,35 53,35 43,35 5 5 5 5
+89:	73	0x0	0x0	0	3	1	80	0	4 53,28 52,28 51,28 56,28 5 5 5 5
+90:	143	0x4	0x4	4	3	1	-1	0	4 41,36 42,37 51,22 52,21 5 5 5 5
+91:	73	0x4	0x0	0	3	1	81	0	5 48,0 44,0 56,0 55,0 60,0 5 5 5 5 5
+92:	73	0x0	0x0	0	3	1	82	0	4 51,35 50,35 55,35 56,35 5 5 5 5
+93:	73	0x0	0x0	0	3	1	83	0	4 51,38 56,38 44,38 42,38 5 5 5 5
+94:	73	0x0	0x0	0	3	1	84	0	6 42,1 44,1 48,1 46,1 45,1 39,1 5 5 5 5 5 5
+95:	73	0x0	0x0	0	3	1	85	0	6 39,38 45,38 57,38 60,38 55,38 50,38 5 5 5 5 5 5
+96:	143	0x4	0x4	4	3	1	-1	0	4 50,42 51,50 42,51 39,52 5 5 5 5
+97:	73	0x0	0x0	0	3	1	86	0	3 45,0 46,0 57,0 5 5 5
+98:	73	0x0	0x0	0	3	1	87	0	4 46,0 48,0 60,0 57,0 5 5 5 5
+99:	73	0x4	0x0	0	3	1	88	0	5 43,0 47,0 59,0 54,0 53,0 5 5 5 5 5
+100:	73	0x0	0x0	0	3	1	89	0	4 49,35 52,35 53,35 54,35 5 5 5 5
+101:	73	0x0	0x0	0	3	1	90	0	7 49,1 54,1 59,1 58,1 37,1 33,1 40,1 5 5 5 5 5 5 5
+102:	73	0x0	0x0	0	3	1	91	0	4 53,15 52,15 41,15 43,15 5 5 5 5
+103:	73	0x0	0x0	0	3	1	92	0	6 34,28 47,28 43,28 41,28 40,28 33,28 5 5 5 5 5 5
+104:	143	0x4	0x4	4	3	1	-1	0	4 52,46 49,53 40,54 41,55 5 5 5 5
+105:	73	0x0	0x0	0	3	1	93	0	3 37,0 58,0 38,0 5 5 5
+106:	73	0x4	0x0	0	3	1	94	0	4 34,0 33,0 37,0 38,0 5 5 5 5
+107:	73	0x0	0x0	0	3	1	95	0	5 47,0 34,0 38,0 58,0 59,0 5 5 5 5 5
+108:	73	0x0	0x0	0	3	1	96	0	3 7,0 25,0 6,0 5 5 5
+109:	73	0x4	0x0	0	3	1	97	0	3 27,0 1,0 9,0 5 5 5
+110:	73	0x0	0x0	0	3	1	98	0	5 7,0 6,0 8,0 9,0 1,0 5 5 5 5 5
+111:	73	0x4	0x0	0	3	1	99	0	6 25,0 7,0 1,0 27,0 29,0 28,0 5 5 5 5 5 5
+112:	73	0x0	0x0	0	3	1	100	0	5 31,0 8,0 6,0 25,0 28,0 5 5 5 5 5
+113:	73	0x0	0x0	0	3	1	101	0	5 29,0 27,0 9,0 8,0 31,0 5 5 5 5 5
+114:	73	0x1	0x0	0	3	1	102	0	3 28,0 29,0 31,0 5 5 5
+115:	73	0x0	0x0	0	3	1	103	0	3 7,0 6,0 25,0 5 5 5
+116:	73	0x4	0x0	0	3	1	104	0	4 25,0 24,0 4,0 7,0 5 5 5 5
+117:	73	0x4	0x0	0	3	1	105	0	4 5,0 24,0 25,0 6,0 5 5 5 5
+118:	73	0x4	0x0	0	3	1	106	0	3 4,0 24,0 5,0 5 5 5
+119:	73	0x0	0x0	0	3	1	107	0	4 6,0 7,0 4,0 5,0 5 5 5 5
+120:	73	0x0	0x0	0	3	1	108	0	5 35,0 38,0 58,0 57,0 46,0 5 5 5 5 5
+121:	73	0x0	0x0	0	3	1	109	0	3 35,0 34,0 38,0 5 5 5
+122:	73	0x0	0x0	0	3	1	110	0	5 59,0 58,0 38,0 34,0 47,0 5 5 5 5 5
+123:	73	0x0	0x0	0	3	1	111	0	4 57,0 58,0 59,0 60,0 5 5 5 5
+124:	73	0x0	0x0	0	3	1	112	0	5 35,0 46,0 48,0 47,0 34,0 5 5 5 5 5
+125:	73	0x0	0x0	0	3	1	113	0	4 60,0 48,0 46,0 57,0 5 5 5 5
+126:	73	0x0	0x0	0	3	1	114	0	4 59,0 47,0 48,0 60,0 5 5 5 5
+127:	73	0x0	0x0	0	3	1	115	0	5 35,0 46,0 57,0 58,0 38,0 5 5 5 5 5
+128:	73	0x0	0x0	0	3	1	116	0	3 58,0 37,0 38,0 5 5 5
+129:	73	0x4	0x0	0	3	1	117	0	5 57,0 45,0 36,0 37,0 58,0 5 5 5 5 5
+130:	73	0x4	0x0	0	3	1	118	0	4 45,0 46,0 35,0 36,0 5 5 5 5
+131:	73	0x0	0x0	0	3	1	119	0	3 46,0 45,0 57,0 5 5 5
+132:	73	0x1	0x0	0	3	1	120	0	4 38,0 37,0 36,0 35,0 5 5 5 5
+133:	73	0x0	0x0	0	3	1	121	0	4 8,0 3,0 2,0 9,0 5 5 5 5
+134:	73	0x4	0x0	0	3	1	122	0	5 23,0 27,0 9,0 2,0 16,0 5 5 5 5 5
+135:	73	0x4	0x0	0	3	1	123	0	5 16,0 2,0 3,0 15,0 14,0 5 5 5 5 5
+136:	73	0x4	0x0	0	3	1	124	0	5 31,0 30,0 15,0 3,0 8,0 5 5 5 5 5
+137:	73	0x4	0x0	0	3	1	125	0	4 16,0 14,25 22,26 23,27 5 5 5 5
+138:	73	0x4	0x0	0	3	1	126	0	5 26,0 22,0 14,0 15,0 30,0 5 5 5 5 5
+139:	73	0x0	0x0	0	3	1	127	0	5 29,0 27,0 23,0 22,0 26,0 5 5 5 5 5
+140:	73	0x0	0x0	0	3	1	128	0	4 30,0 31,0 29,0 26,0 5 5 5 5
+141:	73	0x0	0x0	0	3	1	129	0	5 31,0 8,0 9,0 27,0 29,0 5 5 5 5 5
+142:	73	0x0	0x0	0	3	1	130	0	4 26,0 29,0 31,0 30,0 5 5 5 5
+143:	73	0x4	0x0	0	3	1	131	0	4 30,0 31,0 28,0 21,0 5 5 5 5
+144:	73	0x4	0x0	0	3	1	132	0	3 21,0 26,0 30,0 5 5 5
+145:	73	0x4	0x0	0	3	1	133	0	4 29,0 26,0 21,0 28,0 5 5 5 5
+146:	73	0x0	0x0	0	3	1	134	0	3 31,0 29,0 28,0 5 5 5
+147:	73	0x4	0x0	0	3	1	135	0	5 60,0 55,0 56,0 44,0 48,0 5 5 5 5 5
+148:	73	0x4	0x0	0	3	1	136	0	4 48,0 44,0 43,0 47,0 5 5 5 5
+149:	73	0x4	0x0	0	3	1	137	0	4 43,0 44,0 56,0 53,0 5 5 5 5
+150:	73	0x4	0x0	0	3	1	138	0	4 59,0 54,0 55,0 60,0 5 5 5 5
+151:	73	0x4	0x0	0	3	1	139	0	5 53,0 54,0 59,0 47,0 43,0 5 5 5 5 5
+152:	73	0x4	0x0	0	3	1	140	0	4 56,0 55,0 54,0 53,0 5 5 5 5
+153:	73	0x0	0x0	0	3	1	141	0	4 60,0 48,0 47,0 59,0 5 5 5 5
+
+#--- Surface normals ---
+0: 0 -1 0
+1: 0 0 -1
+2: 1 0 0
+3: 0 1 0
+4: -.715083 0 .69904
+5: .759257 .650791 0
+6: -.715083 0 .699039
+7: 0 1 0
+8: 0 .707107 -.707107
+9: .707107 .707107 0
+10: 0 .707107 .707107
+11: -.707107 .707107 0
+12: 0 -1 0
+13: 0 1 0
+14: 0 -1 0
+15: 0 -.707107 -.707107
+16: .707107 -.707107 0
+17: 0 -.707107 .707107
+18: -.707107 -.707107 0
+19: 0 1 0
+20: 0 -1 0
+21: 0 -1 0
+22: 0 -1 0
+23: 0 -1 0
+24: 1 0 0
+25: .707107 -.707107 0
+26: .707107 0 -.707107
+27: .707107 0 .707107
+28: .707107 .707107 0
+29: -1 0 0
+30: -1 0 0
+31: -.707107 -.707107 0
+32: -.707107 0 -.707107
+33: -.707107 0 .707107
+34: -.707107 .707107 0
+35: 1 0 0
+36: -1 0 0
+37: -1 0 0
+38: -1 0 0
+39: -1 0 0
+40: 0 0 1
+41: 0 .707107 .707107
+42: .707107 0 .707107
+43: 0 -.707107 .707107
+44: -.707107 0 .707107
+45: 0 0 -1
+46: 0 0 1
+47: 0 0 1
+48: 0 0 1
+49: 0 0 -1
+50: 0 .707107 -.707107
+51: -.707107 0 -.707107
+52: .707107 0 -.707107
+53: 0 -.707107 -.707107
+54: 0 0 1
+55: 0 0 -1
+56: 0 -1 0
+57: -1 0 0
+58: 0 0 1
+59: .5547 .83205 0
+60: 0 .647855 -.761764
+61: 0 1 0
+62: 0 .707107 -.707107
+63: .707107 .707107 0
+64: 0 .707107 .707107
+65: -.707107 .707107 0
+66: 0 -1 0
+67: 0 1 0
+68: 0 1 0
+69: 0 1 0
+70: 0 -1 0
+71: 0 -.707107 -.707107
+72: .707107 -.707107 0
+73: 0 -.707107 .707107
+74: -.707107 -.707107 0
+75: 0 1 0
+76: 1 0 0
+77: .707107 -.707107 0
+78: .707107 0 -.707107
+79: .707107 0 .707107
+80: .707107 .707107 0
+81: -1 0 0
+82: 1 0 0
+83: 1 0 0
+84: 1 0 0
+85: -1 0 0
+86: -.707107 -.707107 0
+87: -.707107 0 -.707107
+88: -.707107 0 .707107
+89: -.707107 .707107 0
+90: 1 0 0
+91: 0 0 1
+92: 0 .707107 .707107
+93: .707107 0 .707107
+94: 0 -.707107 .707107
+95: -.707107 0 .707107
+96: 0 0 -1
+97: 0 0 1
+98: 0 0 1
+99: 0 0 -1
+100: 0 .707107 -.707107
+101: -.707107 0 -.707107
+102: .707107 0 -.707107
+103: 0 -.707107 -.707107
+104: 0 0 1
+105: 0 0 -1
+106: 0 0 -1
+107: 0 0 -1
+108: .715083 0 -.69904
+109: 0 0 -1
+110: .715083 0 -.69904
+111: 0 1 0
+112: 1 0 0
+113: -.711637 -.702547 0
+114: 0 0 1
+115: -.715083 0 .69904
+116: 0 1 0
+117: 1 0 0
+118: 0 0 -1
+119: -.759257 -.650791 0
+120: -.5547 -.83205 0
+121: -.5547 -.83205 0
+122: 0 0 1
+123: -1 0 0
+124: 0 -1 0
+125: 0 0 -1
+126: .600915 .799313 0
+127: .5547 .83205 0
+128: 0 0 1
+129: -1 0 0
+130: 0 -1 0
+131: 0 0 -1
+132: 0 -.647855 .761764
+133: .715083 0 -.69904
+134: 0 0 -1
+135: 0 -1 0
+136: 1 0 0
+137: -1 0 0
+138: 0 0 1
+139: 0 1 0
+140: .711637 .702547 0
+141: .711637 .702547 0
+142: -.711637 -.702547 0
+143: 1 0 0
+144: 0 0 1
+145: 0 1 0
+146: 0 0 -1
+147: 0 0 -1
+148: 0 -1 0
+149: 1 0 0
+150: -1 0 0
+151: 0 0 1
+152: 0 1 0
+153: -.600915 -.799313 0
+
+Section: SECTORS
+
+World sectors 21
+
+SECTOR 0
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX -80 -80 55.339016 -55.892308 80 80
+COLLIDEBOX -77.799253 -60.409648 69.388506 -66.375473 79.475842 79.682584
+CENTER -68.996264 -18.780151 72.064599
+RADIUS 100.788618
+VERTICES 10
+0: 0
+1: 1
+2: 2
+3: 3
+4: 4
+5: 5
+6: 6
+7: 7
+8: 8
+9: 9
+SURFACES 0 7
+
+SECTOR 1
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX -640 80 -640 640 640 640
+COLLIDEBOX -214.040677 223.36 -221.738303 221.702892 613.856431 214.003053
+CENTER -13.589231 304 13.533902
+RADIUS 983.453834
+VERTICES 10
+0: 10
+1: 11
+2: 12
+3: 13
+4: 14
+5: 15
+6: 0
+7: 16
+8: 2
+9: 3
+SURFACES 7 7
+
+SECTOR 2
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX -640 -640 -640 640 -80 640
+COLLIDEBOX -173.141912 -623.2 -164.009442 160.686609 -196.228522 169.634478
+CENTER -25.713042 -220 21.097998
+RADIUS 1027.922379
+VERTICES 16
+0: 17
+1: 18
+2: 19
+3: 20
+4: 21
+5: 22
+6: 23
+7: 24
+8: 1
+9: 25
+10: 4
+11: 7
+12: 26
+13: 27
+14: 28
+15: 29
+SURFACES 14 10
+
+SECTOR 3
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 80 -640 -640 640 640 640
+COLLIDEBOX 248 -230.4 -230.4 628.8 244.8 230.4
+CENTER 360 0 0
+RADIUS 947.417543
+VERTICES 8
+0: 18
+1: 17
+2: 11
+3: 10
+4: 23
+5: 22
+6: 14
+7: 16
+SURFACES 24 6
+
+SECTOR 4
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX -640 -640 -640 -80 640 640
+COLLIDEBOX -623.2 -166.285959 -167.096977 -175.2 187.849405 166.375413
+CENTER -220 -16.692052 16.809754
+RADIUS 1019.334834
+VERTICES 16
+0: 20
+1: 19
+2: 13
+3: 12
+4: 21
+5: 24
+6: 0
+7: 15
+8: 3
+9: 25
+10: 5
+11: 6
+12: 30
+13: 8
+14: 28
+15: 31
+SURFACES 30 10
+
+SECTOR 5
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX -640 -640 80 640 640 640
+COLLIDEBOX -195.19504 -191.973307 198.357333 189.693573 192.557336 623.829333
+CENTER -22.215333 -17.740704 235.733333
+RADIUS 1017.144788
+VERTICES 15
+0: 18
+1: 19
+2: 13
+3: 10
+4: 32
+5: 16
+6: 0
+7: 24
+8: 23
+9: 2
+10: 1
+11: 5
+12: 4
+13: 27
+14: 9
+SURFACES 40 9
+
+SECTOR 6
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX -640 -640 -640 640 640 -80
+COLLIDEBOX -211.899895 -211.850984 -626.56 223.717746 223.760903 -232.32
+CENTER -10.441022 -10.369094 -304
+RADIUS 979.25966
+VERTICES 10
+0: 20
+1: 17
+2: 11
+3: 12
+4: 15
+5: 14
+6: 22
+7: 21
+8: 26
+9: 30
+SURFACES 49 7
+
+SECTOR 7
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 1399.4 60.894505 -80 1431.6 80 -63.751402
+COLLIDEBOX 1413.595934 70.574622 -79.783352 1431.147055 79.547055 -71.984025
+CENTER 1420.276374 73.631502 -74.583801
+RADIUS 24.366403
+VERTICES 6
+0: 33
+1: 34
+2: 35
+3: 36
+4: 37
+5: 38
+SURFACES 56 5
+
+SECTOR 8
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 711.6 80 -640 1991.6 640 640
+COLLIDEBOX 1159.198913 195.2 -185.757287 1543.928261 615.129348 172.642713
+CENTER 1369.833696 240 -9.107343
+RADIUS 1007.279475
+VERTICES 14
+0: 39
+1: 40
+2: 41
+3: 42
+4: 33
+5: 43
+6: 44
+7: 45
+8: 46
+9: 34
+10: 35
+11: 36
+12: 47
+13: 48
+SURFACES 61 9
+
+SECTOR 9
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 711.6 -640 -640 1991.6 -80 640
+COLLIDEBOX 1095.6 -628.8 -256 1607.6 -273.6 256
+CENTER 1351.6 -360 0
+RADIUS 947.417543
+VERTICES 8
+0: 49
+1: 50
+2: 51
+3: 52
+4: 53
+5: 54
+6: 55
+7: 56
+SURFACES 70 6
+
+SECTOR 10
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 1431.6 -640 -640 1991.6 640 640
+COLLIDEBOX 1540.4 -162.658739 -186.592929 1975.6 179.741261 171.807071
+CENTER 1591.6 22.973974 -10.267957
+RADIUS 1011.12952
+VERTICES 14
+0: 50
+1: 49
+2: 40
+3: 39
+4: 55
+5: 54
+6: 33
+7: 45
+8: 57
+9: 58
+10: 36
+11: 37
+12: 59
+13: 60
+SURFACES 76 9
+
+SECTOR 11
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 711.6 -640 -640 1271.6 640 640
+COLLIDEBOX 722.8 -230.4 -230.4 1103.6 244.8 230.4
+CENTER 991.6 0 0
+RADIUS 947.417543
+VERTICES 8
+0: 52
+1: 51
+2: 42
+3: 41
+4: 53
+5: 56
+6: 44
+7: 43
+SURFACES 85 6
+
+SECTOR 12
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 711.6 -640 80 1991.6 640 640
+COLLIDEBOX 1158.503107 -191.703694 195.003077 1543.191525 192.984725 624.787692
+CENTER 1368.810452 19.259274 259.692308
+RADIUS 1005.575611
+VERTICES 13
+0: 50
+1: 51
+2: 42
+3: 39
+4: 61
+5: 45
+6: 44
+7: 56
+8: 55
+9: 46
+10: 57
+11: 60
+12: 48
+SURFACES 91 8
+
+SECTOR 13
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 711.6 -640 -640 1991.6 640 -80
+COLLIDEBOX 1165.266571 -186.723678 -624 1550.35284 198.362591 -201.6
+CENTER 1378.756723 26.582827 -240
+RADIUS 1024.417277
+VERTICES 14
+0: 52
+1: 49
+2: 40
+3: 41
+4: 43
+5: 33
+6: 54
+7: 53
+8: 34
+9: 58
+10: 37
+11: 38
+12: 47
+13: 59
+SURFACES 99 9
+
+SECTOR 14
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX -80 -80 23.8 -24.410219 -23.690943 80
+COLLIDEBOX -70.017883 -79.33397 25.056184 -51.600711 -53.755503 65.12276
+CENTER -62.174791 -63.349245 55.204599
+RADIUS 53.635509
+VERTICES 10
+0: 1
+1: 25
+2: 6
+3: 7
+4: 27
+5: 8
+6: 9
+7: 29
+8: 28
+9: 31
+SURFACES 108 7
+
+SECTOR 15
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX -80 -80 55.339016 -61.142857 -58 80
+COLLIDEBOX -79.748571 -79.706667 65.288123 -70.697143 -69.062857 79.63538
+CENTER -73.714286 -72.666667 70.884496
+RADIUS 22.277416
+VERTICES 6
+0: 5
+1: 4
+2: 7
+3: 6
+4: 25
+5: 24
+SURFACES 115 5
+
+SECTOR 16
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 1367.535873 31.837232 -80 1431.6 80 80
+COLLIDEBOX 1397.226604 57.698297 -77.375006 1416.077639 68.318143 76.224994
+CENTER 1408.772999 64.163563 -14.37514
+RADIUS 104.201537
+VERTICES 10
+0: 46
+1: 57
+2: 58
+3: 34
+4: 35
+5: 38
+6: 59
+7: 47
+8: 60
+9: 48
+SURFACES 120 7
+
+SECTOR 17
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 1399.4 58.533333 -80 1431.6 80 80
+COLLIDEBOX 1418.365824 67.592234 -64.625084 1431.260291 78.848848 76.162486
+CENTER 1423.10728 69.85696 -15.93785
+RADIUS 99.342778
+VERTICES 8
+0: 35
+1: 36
+2: 37
+3: 38
+4: 58
+5: 57
+6: 46
+7: 45
+SURFACES 127 6
+
+SECTOR 18
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX -80 -80 -80 80 80 80
+COLLIDEBOX -55.067074 -48.296046 -76.377925 76.093293 76.093293 77.222075
+CENTER -17.667685 -7.94556 10.551869
+RADIUS 159.602754
+VERTICES 15
+0: 26
+1: 27
+2: 9
+3: 8
+4: 30
+5: 62
+6: 23
+7: 16
+8: 15
+9: 14
+10: 22
+11: 3
+12: 2
+13: 29
+14: 31
+SURFACES 133 9
+
+SECTOR 19
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX -80 -80 -80 -24.410219 -23.690943 23.8
+COLLIDEBOX -79.258803 -79.249213 -77.924 -52.575708 -52.201685 21.724
+CENTER -61.470073 -61.230314 -28.1
+RADIUS 66.679627
+VERTICES 6
+0: 28
+1: 29
+2: 31
+3: 30
+4: 26
+5: 21
+SURFACES 142 5
+
+SECTOR 20
+FLAGS 0x1000
+AMBIENT LIGHT 5
+EXTRA LIGHT 0
+COLORMAP 1
+TINT 0 0 0
+BOUNDBOX 1271.6 -80 -80 1431.6 80 80
+COLLIDEBOX 1274.915897 -76.568456 -76.8 1406.927178 50.199789 76.8
+CENTER 1354.497431 5.788588 0
+RADIUS 143.637272
+VERTICES 11
+0: 59
+1: 47
+2: 48
+3: 60
+4: 63
+5: 55
+6: 56
+7: 44
+8: 43
+9: 53
+10: 54
+SURFACES 147 7
+
+Section: AICLASS
+World AIClasses 0
+end
+
+Section: MODELS
+World models 51
+0: bow0.3do
+1: bow1.3do
+2: BowG.3do
+3: bowp.3do
+4: BowV.3do
+5: bpck.3do
+6: bry0.3do
+7: bryg.3do
+8: bryp.3do
+9: bryv.3do
+10: con0.3do
+11: cong.3do
+12: conp.3do
+13: conv.3do
+14: deathstation.3do
+15: det0.3do
+16: detg.3do
+17: detp_1.3do
+18: detv.3do
+19: fistg.3do
+20: fistv.3do
+21: kaiplanet.3do
+22: kaiplanet3.3do
+23: kaitree.3do
+24: ky.3do
+25: ligt2.3do
+26: orangecloud.3do
+27: rld0.3do
+28: rldg.3do
+29: rldp.3do
+30: rldv.3do
+31: rpt0.3do
+32: rptg.3do
+33: rptp.3do
+34: rptv.3do
+35: sabg.3do
+36: sabv.3do
+37: seq0.3do
+38: seqg.3do
+39: seqp_1.3do
+40: seqv.3do
+41: shrp_1.3do
+42: shrp_2.3do
+43: shrp_3.3do
+44: shrp_4.3do
+45: snakesection.3DO
+46: snakewaybox.3do
+47: str0.3do
+48: strg.3do
+49: strp.3do
+50: strv.3do
+end
+
+Section: SPRITES
+World sprites 17
+0: bowx.spr
+1: bowx2.spr
+2: bryx.spr
+3: bubble.spr
+4: bubble2.spr
+5: bubble3.spr
+6: conx.spr
+7: debrisx.spr
+8: destruct8.spr
+9: detx.spr
+10: forcedstruct_150.spr
+11: rldx.spr
+12: rptx.spr
+13: seqx2.spr
+14: splash.spr
+15: splooshx.spr
+16: twinkle.spr
+end
+
+Section: KEYFRAMES
+World Keyframes 200
+end
+
+Section: ANIMCLASS
+World puppets 3
+0: ky.pup
+1: ky2.pup
+2: beamcharge.pup
+end
+
+Section: Soundclass
+World soundclasses 23
+0: bow.snd
+1: bry.snd
+2: conc.snd
+3: det.snd
+4: exp_bowhit.snd
+5: exp_conc.snd
+6: exp_dest.snd
+7: exp_det.snd
+8: exp_fleshy.snd
+9: exp_laserhit.snd
+10: exp_med.snd
+11: exp_punch.snd
+12: exp_raildet.snd
+13: exp_rpthit.snd
+14: exp_saber_blood.snd
+15: exp_saber_saber.snd
+16: exp_saber_wall.snd
+17: exp_small.snd
+18: ky.snd
+19: rail.snd
+20: rep.snd
+21: seq.snd
+22: stlaser.snd
+end
+
+Section: cogscripts
+World scripts 48
+0: kyle.cog
+1: roshi.cog
+2: dummy.cog
+3: dustring.cog
+4: Aura.cog
+5: FAura.cog
+6: BeamHead.cog
+7: beamtail.cog
+8: db1.cog
+9: db2.cog
+10: db3.cog
+11: db4.cog
+12: db5.cog
+13: db6.cog
+14: db7.cog
+15: exp0.cog
+16: exp1.cog
+17: exp2.cog
+18: exp3.cog
+19: exp4.cog
+20: exp5.cog
+21: exp6.cog
+22: exp7.cog
+23: exp8.cog
+24: exp9.cog
+25: kiorb0.cog
+26: kiorb1.cog
+27: kiorb2.cog
+28: kiorb3.cog
+29: kiorb4.cog
+30: OrbPars.cog
+31: kibexp.cog
+32: seekerball.cog
+33: renexp.cog
+34: beamcheck.cog
+35: viewrestrict.cog
+36: KameCharge.cog
+37: BBCharge.cog
+38: FFCharge.cog
+39: FF2Charge.cog
+40: GGCharge.cog
+41: SBCcharge.cog
+42: MCharge.cog
+43: FBCharge.cog
+44: OHCharge.cog
+45: melee_flykick.cog
+46: teleport2.cog
+47: kaiplanet.cog
+end
+
+Section: cogs
+
+World cogs  54
+#Num	Script          Symbol values
+0: kaiplanet.cog 14
+1: teleport2.cog 14 16
+2: teleport2.cog 16 17
+3: kaiplanet.cog 3
+4: kaiplanet.cog 1
+5: kaiplanet.cog 12
+end
+
+Section: TEMPLATES
+World templates 455
+_actor			none			orient=(0.000000/0.000000/0.000000) type=actor collide=1 move=physics thingflags=0x20000000 mass=150.000000 physflags=0x4a4f maxrotvel=200.000000 maxvel=1.000000 health=40.00 maxhealth=40.00 maxrotthrust=90.00 jumpspeed=1.50 eyeoffset=(0.000000/0.000000/0.037000) minheadpitch=-80.00 maxheadpitch=80 lightoffset=(0.000000/0.070000/0.040000) lightintensity=0.80
+walkplayer		_actor			type=player thingflags=0x20000409 minheadpitch=-80.00 maxheadpitch=80.00 light=0.200000 model3d=ky.3do size=0.065000 movesize=0.065000 puppet=ky2.pup soundclass=ky.snd cog=kyle.cog surfdrag=3.000000 airdrag=0.500000 staticdrag=0.300000 health=100 maxhealth=100 maxthrust=2.00 typeflags=0x1 error=0.50 fov=0.71 chance=1.00
++rbot			walkplayer		type=actor model3d=roshi.3do health=100 maxhealth=100 puppet=ky.pup physflags=0x4a4e cog=roshi.cog
++dummy			walkplayer		type=actor collide=0 model3d=goku.3do puppet=ky.pup typeflags=0x8 physflags=0x4a4e cog=dummy.cog
++telesparks		none			orient=(0.000000/0.000000/0.000000) type=particle timer=0.120000 typeflags=0x3f material=O4.mat range=0.030000 rate=256.000000 maxthrust=80.000000 elementsize=0.002000 count=256
+_powerup		none			orient=(0.000000/0.000000/0.000000) type=item collide=1 move=physics size=0.100000 movesize=0.010000 surfdrag=3.000000 airdrag=1.000000 mass=10.000000 height=0.050000 physflags=0x400000 angvel=(0.000000/90.000000/0.000000) typeflags=0x1
++watersplash      none               orient=(0.000000/0.000000/0.000000) type=explosion timer=0.500000 sprite=splash.spr typeflags=0x1 damageclass=0x4
++watersplash2     +watersplash       sprite=splooshx.spr
+bubble            none               orient=(0.000000/0.000000/0.000000) type=cog move=physics thingflags=0x10000000 timer=3.000000 sprite=bubble.spr mass=0.050000 physflags=0x200 vel=(0.000000/0.000000/0.300000)
+bubble3           bubble             sprite=bubble3.spr vel=(0.000000/0.000000/0.600000)
+bubble2           bubble             sprite=bubble2.spr vel=(0.000000/0.000000/0.450000)
+_parscope		none			orient=(0.000000/0.000000/0.000000) type=weapon collide=1 move=physics thingflags=0x20000000 mass=5.000000 physflags=0x200 maxrotvel=90.000000 damageclass=0x2 typeflags=0x1
++scope			_parscope		thingflags=0x20000400 model3d=bry0.3do size=0.003000 movesize=0.003000 surfdrag=3.000000 airdrag=0.000000 mass=1.000000 height=0.003000 physflags=0x200 vel=(0.000000/4.689000/0.000000) angvel=(0.000000/0.000000/0.000000) buoyancy=0.250000 damage=0.000000 typeflags=0x240b81
+scope_ghost		none			orient=(0.000000/0.000000/0.000000) type=ghost move=path
++ghost			none			type=ghost
++rocks			none			orient=(0/0/0) type=weapon move=physics collide=0 timer=1 model3d=rocks.3do vel=(0/0/0.1) angvel=(0/-60/0)
++dustring		none			orient=(0/0/0) type=weapon thingflags0x400 move=physics collide=0 model3d=dustring.3do angvel=(0/0/0) cog=dustring.cog
++zan			none			orient=(0/0/0) type=explosion typeflags=0x1 damageclass=0x4 timer=0.1 sprite=zan.spr
++FireGhost		none			orient=(0.000000/0.000000/0.000000) type=ghost move=physics
+_Aura			none			orient=(0/0/0) type=cog thingflags=0x401 light=1 size=0.410831 move=physics angvel=(0/120/0) cog=Aura.cog
+_FAura			_Aura			angvel=(0/0/120) cog=FAura.cog
++aura0			_Aura			model3d=AuraBlue.3do
++aura1			_Aura			model3d=AuraGreen.3do
++aura2			_Aura			model3d=AuraOrange.3do
++aura3			_Aura			model3d=AuraPurple.3do
++aura4			_Aura			model3d=AuraRed.3do
++aura5			_Aura			model3d=AuraSilver.3do
++aura6			_Aura			model3d=AuraTeal.3do
++aura7			_Aura			model3d=AuraYellow.3do
++faura0			_FAura			model3d=FlyAuraBlue.3do
++faura1			_FAura			model3d=FlyAuraGreen.3do
++faura2			_FAura			model3d=FlyAuraOrange.3do
++faura3			_FAura			model3d=FlyAuraPurple.3do
++faura4			_FAura			model3d=FlyAuraRed.3do
++faura5			_FAura			model3d=FlyAuraSilver.3do
++faura6			_FAura			model3d=FlyAuraTeal.3do
++faura7			_FAura			model3d=FlyAuraYellow.3do
+_beam			none			thingflags=0x20000409 light=1 collide=1 orient=(0/0/0) type=weapon move=physics mass=10 physflags=0xad0 cog=BeamHead.cog size=0.02 movesize=0.02 angvel=(0/0/120) soundclass=beam.snd
++beamhead0		_beam			model3d=BeamHeadBlue0.3do health=25
++beamhead1		_beam			model3d=BeamHeadBlue1.3do health=50
++beamhead2		_beam			model3d=BeamHeadBlue2.3do health=75
++beamhead3		_beam			model3d=BeamHeadBlue3.3do health=100
++beamhead4		_beam			model3d=BeamHeadBlue4.3do health=125
++beamhead5		+beamhead0		model3d=BeamHeadGreen0.3do
++beamhead6		+beamhead1		model3d=BeamHeadGreen1.3do
++beamhead7		+beamhead2		model3d=BeamHeadGreen2.3do
++beamhead8		+beamhead3		model3d=BeamHeadGreen3.3do
++beamhead9		+beamhead4		model3d=BeamHeadGreen4.3do
++beamhead10		+beamhead0		model3d=BeamHeadOrange0.3do
++beamhead11		+beamhead1		model3d=BeamHeadOrange1.3do
++beamhead12		+beamhead2		model3d=BeamHeadOrange2.3do
++beamhead13		+beamhead3		model3d=BeamHeadOrange3.3do
++beamhead14		+beamhead4		model3d=BeamHeadOrange4.3do
++beamhead15		+beamhead0		model3d=BeamHeadPurple0.3do
++beamhead16		+beamhead1		model3d=BeamHeadPurple1.3do
++beamhead17		+beamhead2		model3d=BeamHeadPurple2.3do
++beamhead18		+beamhead3		model3d=BeamHeadPurple3.3do
++beamhead19		+beamhead4		model3d=BeamHeadPurple4.3do
++beamhead20		+beamhead0		model3d=BeamHeadRed0.3do
++beamhead21		+beamhead1		model3d=BeamHeadRed1.3do
++beamhead22		+beamhead2		model3d=BeamHeadRed2.3do
++beamhead23		+beamhead3		model3d=BeamHeadRed3.3do
++beamhead24		+beamhead4		model3d=BeamHeadRed4.3do
++beamhead25		+beamhead0		model3d=BeamHeadSilver0.3do
++beamhead26		+beamhead1		model3d=BeamHeadSilver1.3do
++beamhead27		+beamhead2		model3d=BeamHeadSilver2.3do
++beamhead28		+beamhead3		model3d=BeamHeadSilver3.3do
++beamhead29		+beamhead4		model3d=BeamHeadSilver4.3do
++beamhead30		+beamhead0		model3d=BeamHeadTeal0.3do
++beamhead31		+beamhead1		model3d=BeamHeadTeal1.3do
++beamhead32		+beamhead2		model3d=BeamHeadTeal2.3do
++beamhead33		+beamhead3		model3d=BeamHeadTeal3.3do
++beamhead34		+beamhead4		model3d=BeamHeadTeal4.3do
++beamhead35		+beamhead0		model3d=BeamHeadYellow0.3do
++beamhead36		+beamhead1		model3d=BeamHeadYellow1.3do
++beamhead37		+beamhead2		model3d=BeamHeadYellow2.3do
++beamhead38		+beamhead3		model3d=BeamHeadYellow3.3do
++beamhead39		+beamhead4		model3d=BeamHeadYellow4.3do
+_beamtail		none			orient=(0/0/0) type=actor thingflags=0x409 collide=0 move=physics mass=0 physflags=0x200 light=1 angvel=(0/0/120)
++beamtail0		_beamtail		model3d=BeamtailBlue0.3do cog=beamtail.cog
++beamtail1		+beamtail0		model3d=BeamtailBlue1.3do
++beamtail2		+beamtail0		model3d=BeamtailBlue2.3do
++beamtail3		+beamtail0		model3d=BeamtailBlue3.3do
++beamtail4		+beamtail0		model3d=BeamtailBlue4.3do
++beamtail5		+beamtail0		model3d=BeamtailGreen0.3do
++beamtail6		+beamtail0		model3d=BeamtailGreen1.3do
++beamtail7		+beamtail0		model3d=BeamtailGreen2.3do
++beamtail8		+beamtail0		model3d=BeamtailGreen3.3do
++beamtail9		+beamtail0		model3d=BeamtailGreen4.3do
++beamtail10		+beamtail0		model3d=BeamtailOrange0.3do
++beamtail11		+beamtail0		model3d=BeamtailOrange1.3do
++beamtail12		+beamtail0		model3d=BeamtailOrange2.3do
++beamtail13		+beamtail0		model3d=BeamtailOrange3.3do
++beamtail14		+beamtail0		model3d=BeamtailOrange4.3do
++beamtail15		+beamtail0		model3d=BeamtailPurple0.3do
++beamtail16		+beamtail0		model3d=BeamtailPurple1.3do
++beamtail17		+beamtail0		model3d=BeamtailPurple2.3do
++beamtail18		+beamtail0		model3d=BeamtailPurple3.3do
++beamtail19		+beamtail0		model3d=BeamtailPurple4.3do
++beamtail20		+beamtail0		model3d=BeamtailRed0.3do
++beamtail21		+beamtail0		model3d=BeamtailRed1.3do
++beamtail22		+beamtail0		model3d=BeamtailRed2.3do
++beamtail23		+beamtail0		model3d=BeamtailRed3.3do
++beamtail24		+beamtail0		model3d=BeamtailRed4.3do
++beamtail25		+beamtail0		model3d=BeamtailSilver0.3do
++beamtail26		+beamtail0		model3d=BeamtailSilver1.3do
++beamtail27		+beamtail0		model3d=BeamtailSilver2.3do
++beamtail28		+beamtail0		model3d=BeamtailSilver3.3do
++beamtail29		+beamtail0		model3d=BeamtailSilver4.3do
++beamtail30		+beamtail0		model3d=BeamtailTeal0.3do
++beamtail31		+beamtail0		model3d=BeamtailTeal1.3do
++beamtail32		+beamtail0		model3d=BeamtailTeal2.3do
++beamtail33		+beamtail0		model3d=BeamtailTeal3.3do
++beamtail34		+beamtail0		model3d=BeamtailTeal4.3do
++beamtail35		+beamtail0		model3d=Beamtailyellow0.3do
++beamtail36		+beamtail0		model3d=Beamtailyellow1.3do
++beamtail37		+beamtail0		model3d=Beamtailyellow2.3do
++beamtail38		+beamtail0		model3d=Beamtailyellow3.3do
++beamtail39		+beamtail0		model3d=Beamtailyellow4.3do
+Dragonball1		_powerup		thingflags=0x408 model3d=dragonball_1star.3do cog=db1.cog
+Dragonball2		_powerup		thingflags=0x408 model3d=dragonball_2star.3do cog=db2.cog
+Dragonball3		_powerup		thingflags=0x408 model3d=dragonball_3star.3do cog=db3.cog
+Dragonball4		_powerup		thingflags=0x408 model3d=dragonball_4star.3do cog=db4.cog
+Dragonball5		_powerup		thingflags=0x408 model3d=dragonball_5star.3do cog=db5.cog
+Dragonball6		_powerup		thingflags=0x408 model3d=dragonball_6star.3do cog=db6.cog
+Dragonball7		_powerup		thingflags=0x408 model3d=dragonball_7star.3do cog=db7.cog
++ExplodePos		none			type=explosion timer=1
+_ExpPos			none			type=ghost thingflags=0x408
++ExpPos0		_ExpPos			type=ghost cog=exp0.cog
++ExpPos1		_ExpPos			type=ghost cog=exp1.cog
++ExpPos2		_ExpPos			type=ghost cog=exp2.cog
++ExpPos3		_ExpPos			type=ghost cog=exp3.cog
++ExpPos4		_ExpPos			type=ghost cog=exp4.cog
++ExpPos5		_ExpPos			type=ghost cog=exp5.cog
++ExpPos6		_ExpPos			type=ghost cog=exp6.cog
++ExpPos7		_ExpPos			type=ghost cog=exp7.cog
++ExpPos8		_ExpPos			type=ghost cog=exp8.cog
++ExpPos9		_ExpPos			type=ghost cog=exp9.cog
+_SphereExp		none			orient=(0.000000/0.000000/0.000000) thingflags=0x9 light=1 type=explosion move=physics angvel=(100/200/300) timer=0.1
++SmExp0			_SphereExp		model3d=smexp0.3do blasttime=0.1 maxlight=0.1
++SmExp1			_SphereExp		model3d=smexp1.3do blasttime=0.1 maxlight=0.2
++SmExp2			_SphereExp		model3d=smexp2.3do blasttime=0.1 maxlight=0.3
++SphrExp0		_SphereExp		model3d=expsphere0.3do blasttime=0.1 force=100 maxlight=0.5 range=0.4
++SphrExp1		_SphereExp		model3d=expsphere1.3do blasttime=0.1 force=200 maxlight=0.5 range=0.8
++SphrExp2		_SphereExp		model3d=expsphere2.3do blasttime=0.1 force=300 maxlight=0.8 range=1.2
++SphrExp3		_SphereExp		model3d=expsphere3.3do blasttime=0.1 force=400 maxlight=0.8 range=1.6
++SphrExp4		_SphereExp		model3d=expsphere4.3do blasttime=0.1 force=500 maxlight=1 range=2.0
++SphrExp5		_SphereExp		model3d=expsphere5.3do blasttime=0.1 force=600 maxlight=1 range=2.4
++SphrExp6		_SphereExp		model3d=expsphere6.3do blasttime=0.1 force=700 maxlight=1 range=2.8
++SphrExp7		_SphereExp		model3d=expsphere7.3do blasttime=0.1 force=800 maxlight=1 range=3.2
++SphrExp8		_SphereExp		model3d=expsphere8.3do blasttime=0.1 force=900 maxlight=1 range=3.6
++SphrExp9		_SphereExp		model3d=expsphere9.3do blasttime=0.1 force=1000 maxlight=1 range=4.0
+_BeamExp		none			orient=(0/0/0) thingflags=0x1 type=explosion typeflags=0x116 damageclass=0x4 soundclass=exp_beam.snd
++Explode0		_BeamExp		flashrgb=(25/25/25) damage=10 range=0.4 creatething=+ExpPos0
++Explode1		_BeamExp		flashrgb=(50/50/50) damage=20 range=0.8 creatething=+ExpPos1
++Explode2		_BeamExp		flashrgb=(75/75/75) damage=30 range=1.2 creatething=+ExpPos2
++Explode3		_BeamExp		flashrgb=(100/100/100) damage=40 range=1.6 creatething=+ExpPos3
++Explode4		_BeamExp		flashrgb=(125/125/125) damage=50 range=2.0 creatething=+ExpPos4
++Explode5		_BeamExp		flashrgb=(150/150/150) damage=60 range=2.4 creatething=+ExpPos5
++Explode6		_BeamExp		flashrgb=(175/175/175) damage=70 range=2.8 creatething=+ExpPos6
++Explode7		_BeamExp		flashrgb=(200/200/200) damage=80 range=3.2 creatething=+ExpPos7
++Explode8		_BeamExp		flashrgb=(225/225/225) damage=90 range=3.6 creatething=+ExpPos8
++Explode9		_BeamExp		flashrgb=(250/250/250) damage=100 range=4.0 creatething=+ExpPos9
++ballexp0		_BeamExp		flashrgb=(150/150/150) damage=60 range=2.4 creatething=+ExpPos5
++ballexp1		_BeamExp		flashrgb=(175/175/175) damage=90 range=2.8 creatething=+ExpPos6
++ballexp2		_BeamExp		flashrgb=(200/200/200) damage=120 range=3.2 creatething=+ExpPos7
++ballexp3		_BeamExp		flashrgb=(225/225/225) damage=150 range=3.6 creatething=+ExpPos8
++ballexp4		_BeamExp		flashrgb=(250/250/250) damage=200 range=4.0 creatething=+ExpPos9
+_ball0			none			orient=(180/0/0) type=weapon damageclass=0x2 move=physics typeflags=0x40050d collide=0 thingflags=0x20000409 light=1 angvel=(0/0/0) light=1 timer=10 pup=beamcharge.pup damage=20 mindamage=10 rate=25 explode=+ballexp0 fleshhit=+ballexp0 cog=kiorb0.cog size=0.06473 movesize=0.06473
+_ball1			none			orient=(180/0/0) type=weapon damageclass=0x2 move=physics typeflags=0x40050d collide=0 thingflags=0x20000409 light=1 angvel=(0/0/0) light=1 timer=10 pup=beamcharge.pup damage=40 mindamage=20 rate=25 explode=+ballexp1 fleshhit=+ballexp1 cog=kiorb1.cog size=0.09990 movesize=0.09990
+_ball2			none			orient=(180/0/0) type=weapon damageclass=0x2 move=physics typeflags=0x40050d collide=0 thingflags=0x20000409 light=1 angvel=(0/0/0) light=1 timer=10 pup=beamcharge.pup damage=60 mindamage=30 rate=25 explode=+ballexp2 fleshhit=+ballexp2 cog=kiorb2.cog size=0.15487 movesize=0.15487
+_ball3			none			orient=(180/0/0) type=weapon damageclass=0x2 move=physics typeflags=0x40050d collide=0 thingflags=0x20000409 light=1 angvel=(0/0/0) light=1 timer=10 pup=beamcharge.pup damage=80 mindamage=40 rate=25 explode=+ballexp3 fleshhit=+ballexp3 cog=kiorb3.cog size=0.24074 movesize=0.24074
+_ball4			none			orient=(180/0/0) type=weapon damageclass=0x2 move=physics typeflags=0x40050d collide=0 thingflags=0x20000409 light=1 angvel=(0/0/0) light=1 timer=10 pup=beamcharge.pup damage=100 mindamage=50 rate=25 explode=+ballexp4 fleshhit=+ballexp4 cog=kiorb4.cog size=0.37493 movesize=0.37493
++kiorb0			_ball0			model3d=KiOrbBlue0.3do
++kiorb1			_ball1			model3d=KiOrbBlue1.3do
++kiorb2			_ball2			model3d=KiOrbBlue2.3do
++kiorb3			_ball3			model3d=KiOrbBlue3.3do
++kiorb4			_ball4			model3d=KiOrbBlue4.3do
++kiorb5			_ball0			model3d=KiOrbGreen0.3do
++kiorb6			_ball1			model3d=KiOrbGreen1.3do
++kiorb7			_ball2			model3d=KiOrbGreen2.3do
++kiorb8			_ball3			model3d=KiOrbGreen3.3do
++kiorb9			_ball4			model3d=KiOrbGreen4.3do
++kiorb10		_ball0			model3d=KiOrbOrange0.3do
++kiorb11		_ball1			model3d=KiOrbOrange1.3do
++kiorb12		_ball2			model3d=KiOrbOrange2.3do
++kiorb13		_ball3			model3d=KiOrbOrange3.3do
++kiorb14		_ball4			model3d=KiOrbOrange4.3do
++kiorb15		_ball0			model3d=KiOrbPurple0.3do
++kiorb16		_ball1			model3d=KiOrbPurple1.3do
++kiorb17		_ball2			model3d=KiOrbPurple2.3do
++kiorb18		_ball3			model3d=KiOrbPurple3.3do
++kiorb19		_ball4			model3d=KiOrbPurple4.3do
++kiorb20		_ball0			model3d=KiOrbRed0.3do
++kiorb21		_ball1			model3d=KiOrbRed1.3do
++kiorb22		_ball2			model3d=KiOrbRed2.3do
++kiorb23		_ball3			model3d=KiOrbRed3.3do
++kiorb24		_ball4			model3d=KiOrbRed4.3do
++kiorb25		_ball0			model3d=KiOrbSilver0.3do
++kiorb26		_ball1			model3d=KiOrbSilver1.3do
++kiorb27		_ball2			model3d=KiOrbSilver2.3do
++kiorb28		_ball3			model3d=KiOrbSilver3.3do
++kiorb29		_ball4			model3d=KiOrbSilver4.3do
++kiorb30		_ball0			model3d=KiOrbTeal0.3do
++kiorb31		_ball1			model3d=KiOrbTeal1.3do
++kiorb32		_ball2			model3d=KiOrbTeal2.3do
++kiorb33		_ball3			model3d=KiOrbTeal3.3do
++kiorb34		_ball4			model3d=KiOrbTeal4.3do
++kiorb35		_ball0			model3d=KiOrbYellow0.3do
++kiorb36		_ball1			model3d=KiOrbYellow1.3do
++kiorb37		_ball2			model3d=KiOrbYellow2.3do
++kiorb38		_ball3			model3d=KiOrbYellow3.3do
++kiorb39		_ball4			model3d=KiOrbYellow4.3do
+_ChargePars     none            orient=(0.000000/0.000000/0.000000) type=particle move=physics angvel=(0.000000/0.000000/0.000000) thingflags=0x401 light=0.8 typeflags=0x3f range=0.01 rate=192.000000 maxthrust=10 elementsize=0.001000 count=128 timer=1.5 cog=OrbPars.cog pitchrange=10
+_TrailPars0		none			orient=(0.000000/0.000000/0.000000) type=particle range=0.097 thingflags=0x401 light=0.8 typeflags=0x3f rate=128.000000 maxthrust=5.0 elementsize=0.005000 count=64 timer=0.5 pitchrange=90 yawrange=60
+_TrailPars1		none			orient=(0.000000/0.000000/0.000000) type=particle range=0.149 thingflags=0x401 light=0.8 typeflags=0x3f rate=128.000000 maxthrust=5.0 elementsize=0.006000 count=64 timer=0.5 pitchrange=90 yawrange=60
+_TrailPars2		none			orient=(0.000000/0.000000/0.000000) type=particle range=0.232 thingflags=0x401 light=0.8 typeflags=0x3f rate=128.000000 maxthrust=5.0 elementsize=0.007000 count=64 timer=0.5 pitchrange=90 yawrange=60
+_TrailPars3		none			orient=(0.000000/0.000000/0.000000) type=particle range=0.361 thingflags=0x401 light=0.8 typeflags=0x3f rate=128.000000 maxthrust=5.0 elementsize=0.008000 count=64 timer=0.5 pitchrange=90 yawrange=60
+_TrailPars4		none			orient=(0.000000/0.000000/0.000000) type=particle range=0.562 thingflags=0x401 light=0.8 typeflags=0x3f rate=128.000000 maxthrust=5.0 elementsize=0.009000 count=64 timer=0.5 pitchrange=90 yawrange=60
++TrailParsBlue0	_TrailPars0		material=bluepar.mat
++TrailParsGreen0	_TrailPars0		material=greenpar.mat
++TrailParsOrange0	_TrailPars0		material=ornpar.mat
++TrailParsPurple0	_TrailPars0		material=purppar.mat
++TrailParsRed0	_TrailPars0		material=redpar.mat
++TrailParsTeal0	_TrailPars0		material=tealpar.mat
++TrailParsSilver0	_TrailPars0		material=graypar.mat
++TrailParsYellow0	_TrailPars0		material=yelpar.mat
++TrailParsBlue1	_TrailPars1		material=bluepar.mat
++TrailParsGreen1	_TrailPars1		material=greenpar.mat
++TrailParsOrange1	_TrailPars1		material=ornpar.mat
++TrailParsPurple1	_TrailPars1		material=purppar.mat
++TrailParsRed1	_TrailPars1		material=redpar.mat
++TrailParsTeal1	_TrailPars1		material=tealpar.mat
++TrailParsSilver1	_TrailPars1		material=graypar.mat
++TrailParsYellow1	_TrailPars1		material=yelpar.mat
++TrailParsBlue2	_TrailPars2		material=bluepar.mat
++TrailParsGreen2	_TrailPars2		material=greenpar.mat
++TrailParsOrange2	_TrailPars2		material=ornpar.mat
++TrailParsPurple2	_TrailPars2		material=purppar.mat
++TrailParsRed2	_TrailPars2		material=redpar.mat
++TrailParsTeal2	_TrailPars2		material=tealpar.mat
++TrailParsSilver2	_TrailPars2		material=graypar.mat
++TrailParsYellow2	_TrailPars2		material=yelpar.mat
++TrailParsBlue3	_TrailPars3		material=bluepar.mat
++TrailParsGreen3	_TrailPars3		material=greenpar.mat
++TrailParsOrange3	_TrailPars3		material=ornpar.mat
++TrailParsPurple3	_TrailPars3		material=purppar.mat
++TrailParsRed3	_TrailPars3		material=redpar.mat
++TrailParsTeal3	_TrailPars3		material=tealpar.mat
++TrailParsSilver3	_TrailPars3		material=graypar.mat
++TrailParsYellow3	_TrailPars3		material=yelpar.mat
++TrailParsBlue4	_TrailPars4		material=bluepar.mat
++TrailParsGreen4	_TrailPars4		material=greenpar.mat
++TrailParsOrange4	_TrailPars4		material=ornpar.mat
++TrailParsPurple4	_TrailPars4		material=purppar.mat
++TrailParsRed4	_TrailPars4		material=redpar.mat
++TrailParsTeal4	_TrailPars4		material=tealpar.mat
++TrailParsSilver4	_TrailPars4		material=graypar.mat
++TrailParsYellow4	_TrailPars4		material=yelpar.mat
+
+
++OrbParsBlue	_ChargePars		material=bluepar.mat
++OrbParsGreen	_ChargePars		material=greenpar.mat
++OrbParsOrange	_ChargePars		material=ornpar.mat
++OrbParsPurple	_ChargePars		material=purppar.mat
++OrbParsRed		_ChargePars		material=redpar.mat
++OrbParsTeal	_ChargePars		material=tealpar.mat
++OrbParsSilver	_ChargePars		material=graypar.mat
++OrbParsYellow	_ChargePars		material=yelpar.mat
+
++bpar			none			orient=(90.000000/0.000000/0.000000) type=particle typeflags=0x3f material=bluepar.mat maxthrust=160.000000 range=0.001000 rate=192.000000 elementsize=0.001000 count=128 minsize=0.001000 pitchrange=5.000000 timer=0.01
++gpar			none			orient=(90.000000/0.000000/0.000000) type=particle typeflags=0x3f material=greenpar.mat maxthrust=160.000000 range=0.001000 rate=192.000000 elementsize=0.001000 count=128 minsize=0.001000 pitchrange=5.000000 timer=0.01
++opar			none			orient=(90.000000/0.000000/0.000000) type=particle typeflags=0x3f material=ornpar.mat maxthrust=160.000000 range=0.001000 rate=192.000000 elementsize=0.001000 count=128 minsize=0.001000 pitchrange=5.000000 timer=0.01
++ppar			none			orient=(90.000000/0.000000/0.000000) type=particle typeflags=0x3f material=purppar.mat maxthrust=160.000000 range=0.001000 rate=192.000000 elementsize=0.001000 count=128 minsize=0.001000 pitchrange=5.000000 timer=0.01
++rpar			none			orient=(90.000000/0.000000/0.000000) type=particle typeflags=0x3f material=redpar.mat maxthrust=160.000000 range=0.001000 rate=192.000000 elementsize=0.001000 count=128 minsize=0.001000 pitchrange=5.000000 timer=0.01
++spar			none			orient=(90.000000/0.000000/0.000000) type=particle typeflags=0x3f material=tealpar.mat maxthrust=160.000000 range=0.001000 rate=192.000000 elementsize=0.001000 count=128 minsize=0.001000 pitchrange=5.000000 timer=0.01
++tpar			none			orient=(90.000000/0.000000/0.000000) type=particle typeflags=0x3f material=graypar.mat maxthrust=160.000000 range=0.001000 rate=192.000000 elementsize=0.001000 count=128 minsize=0.001000 pitchrange=5.000000 timer=0.01
++ypar			none			orient=(90.000000/0.000000/0.000000) type=particle typeflags=0x3f material=yelpar.mat maxthrust=160.000000 range=0.001000 rate=192.000000 elementsize=0.001000 count=128 minsize=0.001000 pitchrange=5.000000 timer=0.01
++exp_kiblast	none			orient=(0/0/0) thingflags=0x400 type=explosion damageclass=0x4 damage=25 range=0.1 cog=kibexp.cog soundclass=exp_small.snd
++kiblast		none			orient=(0/0/0) type=weapon damageclass=0x2 move=physics typeflags=0x40040d collide=1 thingflags=0x20000c09 light=0.5 model3d=blast.3do size=0.02 movesize=0.02 mass=20 explode=+exp_kiblast fleshhit=+exp_kiblast vel=(0/15/0) timer=5 damage=10 mindamage=2 rate=15 force=10 
++seekerball		none			orient=(0/0/0) type=weapon damageclass=0x2 move=physics typeflags=0x40040d collide=1 thingflags=0x20000c09 light=0.5 model3d=homeball.3do size=0.02 movesize=0.02 mass=20 explode=+exp_kiblast fleshhit=+exp_kiblast angvel=(0/0/180) vel=(0/0/0) timer=20 damage=20 mindamage=2 rate=15 force=10 cog=seekerball.cog
++exp_renzoku	none			orient=(0/0/0) thingflags=0x400 type=explosion damageclass=0x4 damage=5 range=0.05 cog=renexp.cog soundclass=exp_small.snd
++renzoku		none			orient=(0/0/0) type=weapon damageclass=0x2 move=physics typeflags=0x40040d collide=1 thingflags=0x20000c09 light=0.5 model3d=renzoku.3do size=0.01 movesize=0.01 mass=10 explode=+exp_renzoku fleshhit=+exp_renzoku vel=(0/25/0) timer=5 damage=5 mindamage=1 rate=25 force=1 
++kitrail		none            orient=(0/0/0) type=particle move=physics angvel=(0.000000/0.000000/90.000000) thingflags=0x1 light=0.5 typeflags=0x3f material=ycolor.mat range=0.1 rate=32.000000 maxthrust=10 elementsize=0.001000 count=16 timer=0.1 pitchrange=10 yawrange=20
++beamchk2		none			type=cog thingflags=0x400 cog=beamcheck.cog
++beamchk		none			orient=(0/0/0) type=weapon move=physics collide=1 typeflags=0x400101 explode=+beamchk2 fleshhit=+beamchk2 size=0.02 movesize=0.02 vel=(0/100/0) timer=0.05
++levelupflash	none			orient=(0/0/0) thingflags=0x1 type=explosion typeflags=0x156 damageclass=0x4 flashrgb=(255/255/255) damage=1 range=10.0
++plane			none			type=ghost model3d=plane.3do
+_beamfire		none			orient=(0/0/0) type=weapon thingflags=0x409 collide=0 move=physics light=1 angvel=(0/0/120) cog=viewrestrict.cog
++beamfire0		_beamfire		model3d=BeamFireBlue0.3do
++beamfire1		_beamfire		model3d=BeamFireBlue1.3do
++beamfire2		_beamfire		model3d=BeamFireBlue2.3do
++beamfire3		_beamfire		model3d=BeamFireBlue3.3do
++beamfire4		_beamfire		model3d=BeamFireBlue4.3do
++beamfire5		_beamfire		model3d=BeamFireGreen0.3do
++beamfire6		_beamfire		model3d=BeamFireGreen1.3do
++beamfire7		_beamfire		model3d=BeamFireGreen2.3do
++beamfire8		_beamfire		model3d=BeamFireGreen3.3do
++beamfire9		_beamfire		model3d=BeamFireGreen4.3do
++beamfire10		_beamfire		model3d=BeamFireOrange0.3do
++beamfire11		_beamfire		model3d=BeamFireOrange1.3do
++beamfire12		_beamfire		model3d=BeamFireOrange2.3do
++beamfire13		_beamfire		model3d=BeamFireOrange3.3do
++beamfire14		_beamfire		model3d=BeamFireOrange4.3do
++beamfire15		_beamfire		model3d=BeamFirePurple0.3do
++beamfire16		_beamfire		model3d=BeamFirePurple1.3do
++beamfire17		_beamfire		model3d=BeamFirePurple2.3do
++beamfire18		_beamfire		model3d=BeamFirePurple3.3do
++beamfire19		_beamfire		model3d=BeamFirePurple4.3do
++beamfire20		_beamfire		model3d=BeamFireRed0.3do
++beamfire21		_beamfire		model3d=BeamFireRed1.3do
++beamfire22		_beamfire		model3d=BeamFireRed2.3do
++beamfire23		_beamfire		model3d=BeamFireRed3.3do
++beamfire24		_beamfire		model3d=BeamFireRed4.3do
++beamfire25		_beamfire		model3d=BeamFireSilver0.3do
++beamfire26		_beamfire		model3d=BeamFireSilver1.3do
++beamfire27		_beamfire		model3d=BeamFireSilver2.3do
++beamfire28		_beamfire		model3d=BeamFireSilver3.3do
++beamfire29		_beamfire		model3d=BeamFireSilver4.3do
++beamfire30		_beamfire		model3d=BeamFireTeal0.3do
++beamfire31		_beamfire		model3d=BeamFireTeal1.3do
++beamfire32		_beamfire		model3d=BeamFireTeal2.3do
++beamfire33		_beamfire		model3d=BeamFireTeal3.3do
++beamfire34		_beamfire		model3d=BeamFireTeal4.3do
++beamfire35		_beamfire		model3d=BeamFireYellow0.3do
++beamfire36		_beamfire		model3d=BeamFireYellow1.3do
++beamfire37		_beamfire		model3d=BeamFireYellow2.3do
++beamfire38		_beamfire		model3d=BeamFireYellow3.3do
++beamfire39		_beamfire		model3d=BeamFireYellow4.3do
+_beamcharge		none			orient=(0/0/0) thingflags=0x409 type=cog move=physics light=1 angvel=(0/0/0) puppet=beamcharge.pup cog=KameCharge.cog model3d=kameballblue.3do
+_kmhcharge		_beamcharge		cog=KameCharge.cog
+_bbcharge		_beamcharge		cog=BBCharge.cog
+_ffcharge		_beamcharge		cog=FFCharge.cog
+_ff2charge		_beamcharge		cog=FF2Charge.cog
+_ggcharge		_beamcharge		cog=GGCharge.cog
+_sbccharge		_beamcharge		cog=SBCcharge.cog
+_mascharge		_beamcharge		cog=MCharge.cog
+_fbcharge		_beamcharge		cog=FBCharge.cog
+_ohcharge		_beamcharge		cog=OHCharge.cog
+
++kmhchargeblue	_kmhcharge		model3d=kameballblue.3do
++kmhchargegreen	_kmhcharge		model3d=kameballgreen.3do
++kmhchargeorange	_kmhcharge	model3d=kameballorange.3do
++kmhchargepurple	_kmhcharge	model3d=kameballpurple.3do
++kmhchargered	_kmhcharge		model3d=kameballred.3do
++kmhchargesilver	_kmhcharge	model3d=kameballsilver.3do
++kmhchargeteal	_kmhcharge		model3d=kameballteal.3do
++kmhchargeyellow	_kmhcharge	model3d=kameballyellow.3do
+
++bbchargeblue	_bbcharge		model3d=kameballblue.3do
++bbchargegreen	_bbcharge		model3d=kameballgreen.3do
++bbchargeorange	_bbcharge		model3d=kameballorange.3do
++bbchargepurple	_bbcharge		model3d=kameballpurple.3do
++bbchargered	_bbcharge		model3d=kameballred.3do
++bbchargesilver	_bbcharge		model3d=kameballsilver.3do
++bbchargeteal	_bbcharge		model3d=kameballteal.3do
++bbchargeyellow	_bbcharge		model3d=kameballyellow.3do
+
++ffchargeblue	_ffcharge		model3d=kameballblue.3do
++ffchargegreen	_ffcharge		model3d=kameballgreen.3do
++ffchargeorange	_ffcharge		model3d=kameballorange.3do
++ffchargepurple	_ffcharge		model3d=kameballpurple.3do
++ffchargered	_ffcharge		model3d=kameballred.3do
++ffchargesilver	_ffcharge		model3d=kameballsilver.3do
++ffchargeteal	_ffcharge		model3d=kameballteal.3do
++ffchargeyellow	_ffcharge		model3d=kameballyellow.3do
+
++ff2chargeblue		_ff2charge		model3d=kameballblue.3do
++ff2chargegreen		_ff2charge		model3d=kameballgreen.3do
++ff2chargeorange	_ff2charge		model3d=kameballorange.3do
++ff2chargepurple	_ff2charge		model3d=kameballpurple.3do
++ff2chargered		_ff2charge		model3d=kameballred.3do
++ff2chargesilver	_ff2charge		model3d=kameballsilver.3do
++ff2chargeteal		_ff2charge		model3d=kameballteal.3do
++ff2chargeyellow	_ff2charge		model3d=kameballyellow.3do
+
++ggchargeblue	_ggcharge		model3d=kameballblue.3do
++ggchargegreen	_ggcharge		model3d=kameballgreen.3do
++ggchargeorange	_ggcharge		model3d=kameballorange.3do
++ggchargepurple	_ggcharge		model3d=kameballpurple.3do
++ggchargered	_ggcharge		model3d=kameballred.3do
++ggchargesilver	_ggcharge		model3d=kameballsilver.3do
++ggchargeteal	_ggcharge		model3d=kameballteal.3do
++ggchargeyellow	_ggcharge		model3d=kameballyellow.3do
+
++sbcchargeblue	_sbccharge		model3d=kameballblue.3do
++sbcchargegreen	_sbccharge		model3d=kameballgreen.3do
++sbcchargeorange	_sbccharge	model3d=kameballorange.3do
++sbcchargepurple	_sbccharge	model3d=kameballpurple.3do
++sbcchargered	_sbccharge		model3d=kameballred.3do
++sbcchargesilver	_sbccharge	model3d=kameballsilver.3do
++sbcchargeteal	_sbccharge		model3d=kameballteal.3do
++sbcchargeyellow	_sbccharge	model3d=kameballyellow.3do
+
++maschargeblue	_mascharge		model3d=kameballblue.3do
++maschargegreen	_mascharge		model3d=kameballgreen.3do
++maschargeorange	_mascharge	model3d=kameballorange.3do
++maschargepurple	_mascharge	model3d=kameballpurple.3do
++maschargered	_mascharge		model3d=kameballred.3do
++maschargesilver	_mascharge	model3d=kameballsilver.3do
++maschargeteal	_mascharge		model3d=kameballteal.3do
++maschargeyellow	_mascharge	model3d=kameballyellow.3do
+
++fbchargeblue	_fbcharge		model3d=kameballblue.3do
++fbchargegreen	_fbcharge		model3d=kameballgreen.3do
++fbchargeorange	_fbcharge		model3d=kameballorange.3do
++fbchargepurple	_fbcharge		model3d=kameballpurple.3do
++fbchargered	_fbcharge		model3d=kameballred.3do
++fbchargesilver	_fbcharge		model3d=kameballsilver.3do
++fbchargeteal	_fbcharge		model3d=kameballteal.3do
++fbchargeyellow	_fbcharge		model3d=kameballyellow.3do
+
++ohchargeblue	_ohcharge		model3d=kameballblue.3do
++ohchargegreen	_ohcharge		model3d=kameballgreen.3do
++ohchargeorange	_ohcharge		model3d=kameballorange.3do
++ohchargepurple	_ohcharge		model3d=kameballpurple.3do
++ohchargered	_ohcharge		model3d=kameballred.3do
++ohchargesilver	_ohcharge		model3d=kameballsilver.3do
++ohchargeteal	_ohcharge		model3d=kameballteal.3do
++ohchargeyellow	_ohcharge		model3d=kameballyellow.3do
+
++meleehit			none		type=explosion timer=0.001 soundclass=exp_punch.snd typeflags=0x0
++flykick			none		type=weapon model3d=dflt.3do orient=(0/0/0) size=0.1 movesize=0.1 thingflags=0x400 damageclass=0x1 typeflags=0xd collide=1 move=physics explode=+meleehit fleshhit=+meleehit damage=20 cog=melee_flykick.cog
+_explosion			none		orient=(0.000000/0.000000/0.000000) type=explosion typeflags=0x1 damageclass=0x4
+_weapon				none		orient=(0.000000/0.000000/0.000000) type=weapon collide=1 move=physics thingflags=0x20000000 timer=10.000000 mass=5.000000 physflags=0x200 maxrotvel=90.000000 damageclass=0x2 typeflags=0x1
++whitecloud			none		orient=(0.000000/0.000000/0.000000) type=particle timer=0.200000 typeflags=0x3f material=00gsmoke.mat range=0.020000 rate=128.000000 maxthrust=30.000000 elementsize=0.007000 count=128
++dustcloud			+whitecloud	timer=0.120000 material=dusty.mat range=0.015000 rate=256.000000 maxthrust=80.000000 elementsize=0.010000
++punchcloud			+dustcloud	timer=0.150000 material=00gsmoke.mat range=0.006000 rate=64.000000 maxthrust=4.000000 elementsize=0.004000 count=16
++hitsmall			none		orient=(0/0/0) type=explosion typeflags=0x1 damageclass=0x4 timer=0.15 sprite=meleesmall.spr
++punch_exp1			_explosion	timer=0.001000 soundclass=melee_hit1.snd creatething=+hitsmall typeflags=0x0 force=-20.000000
++punch_exp2			_explosion	timer=0.001000 soundclass=melee_hit2.snd creatething=+hitsmall typeflags=0x0 force=-25.000000
++punch_exp3			_explosion	timer=0.001000 soundclass=melee_hit3.snd creatething=+hitsmall typeflags=0x0 force=-30.000000
++punch1				_weapon		size=0.1 movesize=0.1 mass=50.000000 explode=+punch_exp1 fleshhit=+punch_exp1 damage=1.000000 damageclass=0x1 typeflags=0x200d range=0.150000
++punch2				_weapon		size=0.1 movesize=0.1 mass=50.000000 explode=+punch_exp2 fleshhit=+punch_exp2 damage=3.000000 damageclass=0x1 typeflags=0x200d range=0.150000
++punch3				_weapon		size=0.1 movesize=0.1 mass=50.000000 explode=+punch_exp3 fleshhit=+punch_exp3 damage=5.000000 damageclass=0x1 typeflags=0x200d range=0.150000
+
++kbcloud			none		orient=(0.000000/0.000000/0.000000) type=particle typeflags=0x3f material=00gsmoke.mat maxthrust=320.000000 range=0.001000 rate=192.000000 elementsize=0.005000 count=128 minsize=0.001000 timer=0.01
++hitbig				none		orient=(0/0/0) type=explosion typeflags=0x1 damageclass=0x4 timer=0.15 sprite=meleebig.spr
++kb_exp				_explosion	timer=0.001000 soundclass=melee_hit3.snd creatething=+hitbig typeflags=0x0
++knockback			_weapon		size=0.1 movesize=0.1 mass=50.000000 explode=+kb_exp fleshhit=+kb_exp damage=10.000000 damageclass=0x8 typeflags=0x200d range=0.150000
++knockup			_weapon		size=0.1 movesize=0.1 mass=50.000000 explode=+kb_exp fleshhit=+kb_exp damage=10.000000 damageclass=0x8 typeflags=0x200d range=0.150000
++knockdown			_weapon		size=0.1 movesize=0.1 mass=50.000000 explode=+kb_exp fleshhit=+kb_exp damage=10.000000 damageclass=0x8 typeflags=0x200d range=0.150000
++skidpars			none		orient=(0.000000/0.000000/0.000000) type=particle typeflags=0x3f material=00gsmoke.mat maxthrust=1.000000 range=0.1000 rate=8.000000 elementsize=0.005000 count=128 minsize=0.001000 timer=0.1
++Disperse		none			orient=(0/0/0) thingflags=0x1 type=explosion typeflags=0x156 damageclass=0x4 flashrgb=(255/0/0) damage=0 range=5.0 force=2000
+_decor            none               orient=(0.000000/0.000000/0.000000) type=cog collide=1 move=path
+_structure        _decor             collide=3 thingflags=0x8
+_walkstruct       _structure         thingflags=0x400048
+ghost             none               orient=(0.000000/0.000000/0.000000) type=ghost move=path
+oroangecloud      _decor             collide=0 size=13.767934 movesize=13.767934 model3d=orangecloud.3do
+snakewaybox       _walkstruct        collide=0 size=378.34222 movesize=378.34222 model3d=snakewaybox.3do
+snakesecton       _walkstruct        size=105.106138 movesize=105.106138 model3d=snakesection.3DO
+kaitree           _walkstruct        size=4.082682 movesize=4.082682 model3d=kaitree.3do thingflags=0x800048
+kaiplanet2        _walkstruct        size=26.487795 movesize=26.487795 model3d=kaiplanet3.3do thingflags=0x800048
+kaiplanet         _walkstruct        size=22.504791 movesize=22.504791 model3d=kaiplanet.3do
+deathstation      _walkstruct        size=14.148744 movesize=14.148744 model3d=deathstation.3do
+end
+
+Section: Things
+World things 640
+#num template:       name:         	X:		Y:		Z:		Pitch:		Yaw:		Roll:		Sector:
+0: walkplayer walkplayer 61.4 -57.6 -9.4 0 0 0 18
+1: snakesecton snakesecton 8.6402 17.9096 -31.656 0 270 0 18
+2: snakewaybox snakewaybox 0 0 -16 0 0 0 18
+3: deathstation deathstation 61.3798 -54.7431 -9.4331 0 0 0 18
+4: kaiplanet kaiplanet -164.2 -83 158.8 20 -90 10 4
+5: walkplayer walkplayer 58.462382 -54.608857 -9.4 0 270 0 18
+6: walkplayer walkplayer 61.369055 -48.077019 -9.4 0 360 0 18
+7: walkplayer walkplayer 61.481621 -50.849673 -9.4 0 180 0 18
+8: walkplayer walkplayer 61.481621 -52.049673 -9.4 0 180 0 18
+9: walkplayer walkplayer 61.446892 -54.546634 -7 0 180 0 18
+10: walkplayer walkplayer 64.454011 -54.520319 -8.7 0 270 0 18
+11: oroangecloud oroangecloud 61.4 -54.6 -9.8 0 0 0 18
+12: snakesecton snakesecton -145.6 80.4 -27 0 270 0 4
+13: snakewaybox snakewaybox 1345.6 -5.4 -69.6 0 0 0 20
+14: kaiplanet2 kaiplanet2 1345.6 -1.2 0 0 -90 0 20
+15: walkplayer walkplayer 1376 24.8 22.6 0 0 0 20
+16: ghost ghost 1395.2 48.6 -50.3 20 140 0 20
+17: ghost ghost -43.8 -57.4 18.2 0 -40 0 18
+18: snakesecton snakesecton 1501.8 254.6 -117.8 0 270 0 8
+19: kaitree kaitree 1347 7.6 14 -40 0 0 20
+20: kaitree kaitree 1344.2 12.8 8.4 -60 0 0 20
+21: kaitree kaitree 1345.6 14.8 1.8 -80 0 0 20
+22: kaitree kaitree 1363 6 -4.2 -80 -90 -30 20
+23: kaitree kaitree 1358.2 10 -3 90 130 0 20
+24: kaitree kaitree 1364.8 -14.4 .1 -70 250 0 20
+25: kaitree kaitree 1351.4 -17.2 13.4 -20 250 0 20
+26: kaitree kaitree 1328.8 -18.6 -1.6 80 -90 30 20
+27: kaitree kaitree 1337.4 -25.8 0 80 -50 30 20
+28: kaitree kaitree 1327.6 3.2 6.4 80 -120 30 20
+29: kaitree kaitree 1327.8 2.6 -14.2 120 -120 30 20
+30: kaitree kaitree 1344 4.4 -24 220 0 0 20
+31: kaitree kaitree 1343.8 -11.6 -23.6 -220 0 0 20
+32: kaitree kaitree 1344.4 15.8 -5.2 -90 0 0 20
+33: kaitree kaitree 1344.4 -26.2 -5 90 0 0 20
+end
+
+Section: Lights
+Editor lights 1
+
+#num:	type:	X:		Y:		Z:		intensity:	range:
+0: 0 0 0 .5 10 2
+end
+

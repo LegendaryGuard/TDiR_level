@@ -1,0 +1,28 @@
+# Jedi Knight Cog Script
+# key
+# Shred18 20002
+
+symbols
+
+thing       player   local
+thing       senzu
+thing       ghost
+template    dolphin
+sound       takesnd      
+message     taken
+
+end
+
+
+code
+
+taken:
+   senzu = GetSenderRef();
+   player = GetSourceRef(); 
+   print("You found a Dolphin!");
+   PlaySoundThing(takesnd, player, 1, -1, -1, 0x80);  
+   CreateThingnr(dolphin,ghost);  
+   Return;
+
+end
+

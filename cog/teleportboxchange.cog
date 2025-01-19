@@ -1,0 +1,32 @@
+# Jedi Knight Cog Script
+# player teleport and change ROSAT sky
+# Shred18 20002
+
+symbols
+
+thing       player            local
+thing       door
+thing       ghost
+int         randsky             local
+material    box=stroombox.mat   local
+message     touched
+message     trigger
+
+end
+
+
+code
+touched:
+   door = GetSenderRef();
+   player = GetSourceRef(); 
+   TeleportThing(player,ghost);
+   randsky = GetMaterialCel(box);
+   if(randsky == 5);
+{  SetMaterialCel(box,0);
+}
+   SetMaterialCel(box,randsky + 1);
+   
+Return;
+
+end
+

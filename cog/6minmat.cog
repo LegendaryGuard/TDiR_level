@@ -1,0 +1,55 @@
+# Cog that changes between two mats every six minutes
+#
+# Created by Hell Raiser [Jon Harmon]
+# Whoops, the sky is a 3do now!  Hope you dont mind me changing this around a bit -Shred
+
+symbols
+
+material		hellskyfront
+material 		hellskyright
+material		hellskyleft
+material		hellskyback
+material		hellskytop
+
+int			LoopTimeInSec=2
+
+message		startup
+message		timer
+
+end
+
+
+code
+
+startup: 
+
+	SetTimer(LoopTimeInSec);
+	
+return;
+
+timer:
+
+printint(GetMaterialCel(hellskyfront));
+
+	if(GetMaterialCel(hellskyfront) == 0) 
+	{SetMaterialCel(hellskyfront, 10);
+	 SetMaterialCel(hellskyright, 10);
+	 SetMaterialCel(hellskyleft, 10);
+	 SetMaterialCel(hellskyback, 10);
+	 SetMaterialCel(hellskytop, 10);
+}
+
+
+	else if(GetMaterialCel(hellskyfront) == 10)
+	{SetMaterialCel(hellskyfront, 0);
+	 SetMaterialCel(hellskyright, 0);
+	 SetMaterialCel(hellskyleft, 0);
+	 SetMaterialCel(hellskyback, 0);
+	 SetMaterialCel(hellskytop, 0);
+}
+
+	SetTimer(LoopTimeInSec);
+
+return;
+
+end

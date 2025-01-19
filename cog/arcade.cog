@@ -1,0 +1,346 @@
+# Jedi Knight Cog Script
+# Play an arcade game within the game! Hows that fer some codin?
+# Shred18 20002
+
+flags=0x40
+symbols
+
+thing        player                             local                         
+thing        machine                                                          
+thing        ghost                                                            
+sector       checkpoint1                                                      
+sector       checkpoint2 
+surface      note                                                     
+template     dummy
+template     sky=roshihutbox			local                                                           
+material     startmat=racestart.mat             local                         
+material     arcademat=arcade.mat               local
+material     hovermat=hovercar.mat              local                         
+model        hovercar=hovercar.3do                                                                          
+sound        beep1                                                            
+sound        beep2                                                            
+sound        beep3
+sound        victory                                                            
+sound        hoversnd                                                         
+int          guy                                local
+int	     attachment				local                         
+flex         timecount                          local                         
+flex         score                              local                                                 
+int          weap1                              local   //I wish I knew arrays..I don't. What can ya do..                      
+int          weap2                              local                         
+int          weap3                              local                         
+int          weap4                              local                         
+int          weap5                              local                         
+int          weap6                              local                         
+int          weap7                              local                         
+int          weap8                              local                         
+int          weap9                              local                         
+int          weap10                             local 
+int		ki				local
+int		charging			local
+int		kaoken				local
+int		throw				local
+int		sense				local
+int		melee				local                        
+int          bact                               local                         
+int          ir                                 local                         
+int          field                              local                        
+int          hs                                 local
+int          speed=2                            local
+int          name				local
+int		reading=0			local
+flex         mytime=4.0                         local                         
+vector       thrust                             local                              
+message      activate                                                        
+message      pulse                                                            
+message      trigger                                                          
+message      entered                                                          
+#message      user0                                                            
+#message      killed                                                           
+
+end                                                                           
+
+
+code
+
+activate:
+   //player = jkGetLocalPlayer();
+   player = GetSourceRef();
+   If(machine == GetSenderRef())
+  { 
+   guy = CreateThingatPosNr(dummy,GetThingSector(player),GetThingPos(player),GetThingLVec(player)); 
+   SetThingModel(guy, GetThingModel(player));
+   SetThingLook(guy,machine); 
+   SetMaterialCel(arcademat,1);
+   TeleportThing(player, ghost);
+   attachment = CreateThing(sky,player);  //eliminate hom from the track
+   AttachThingtoThingEx(attachment, player, 0xc); 
+   ParseArg(player, "puppet=cr.pup");
+   SetThingModel(player, hovercar);
+   SetActorFlags(player,0x200000);
+   SetActorFlags(player,0x800000);
+   SetActorFlags(player,0x80000000);
+   hs = PlaySoundThing(hoversnd, player, 3, -1, -1, 0x81);  
+   SetMaterialCel(startmat,0);
+   PlaySoundThing(beep3, player, 3, -1, -1, 0x80);
+   Print("3");
+   Sleep(1.0);
+   SetMaterialCel(startmat,1);
+   PlaySoundThing(beep1, player, 3, -1, -1, 0x80);
+   Print("2");
+   Sleep(1.0);
+   SetMaterialCel(startmat,2);
+   PlaySoundThing(beep1, player, 3, -1, -1, 0x80);
+   Print("1");
+   Sleep(1.0);
+   SetMaterialCel(startmat,3);
+   PlaySoundThing(beep2, player, 3, -1, -1, 0x80);
+   Print("START!");
+   ClearActorFlags(player,0x200000);
+
+   weap1 = IsInvAvailable(player,1);  //get item and weapon info for later.
+   weap2 = IsInvAvailable(player,2);
+   weap3 = IsInvAvailable(player,3);
+   weap4 = IsInvAvailable(player,4);
+   weap5 = IsInvAvailable(player,5);
+   weap6 = IsInvAvailable(player,6);
+   weap7 = IsInvAvailable(player,7);
+   weap8 = IsInvAvailable(player,8);
+   weap9 = IsInvAvailable(player,9);
+   weap10 = IsInvAvailable(player,10);
+   ki = IsInvAvailable(player,21);
+   charging = IsInvAvailable(player,25);
+   kaoken = IsInvAvailable(player,22);
+   throw = IsInvAvailable(player,30);
+   sense = IsInvAvailable(player,31);
+   melee = IsInvAvailable(player,32);
+   bact =  IsInvAvailable(player,40);
+   ir = IsInvAvailable(player,41);
+   field = IsInvAvailable(player,42);
+
+SetInvAvailable(player,1,0);    //disable it all.
+SetInvAvailable(player,2,0);
+SetInvAvailable(player,3,0);
+SetInvAvailable(player,4,0);
+SetInvAvailable(player,5,0);
+SetInvAvailable(player,6,0);
+SetInvAvailable(player,7,0);
+SetInvAvailable(player,8,0);
+SetInvAvailable(player,9,0);
+SetInvAvailable(player,10,0);
+SetInvAvailable(player,21,0);
+SetInvAvailable(player,25,0);
+SetInvAvailable(player,22,0);
+SetInvAvailable(player,30,0);
+SetInvAvailable(player,31,0);
+SetInvAvailable(player,32,0);
+SetInvAvailable(player,40,0);
+SetInvAvailable(player,41,0);
+SetInvAvailable(player,42,0);
+SetInv(player,14,0);
+
+   //SetPhysicsFlags(player,0x2);
+   //SetPhysicsFlags(player,0x20);
+   SetPhysicsFlags(player,0x400);
+   SetPhysicsFlags(player,0x100);
+   SetPhysicsFlags(player,0x40000);  
+   AddThingVel(player, VectorScale(GetThingLVec(player), 2));
+   SetPulse(0.5); 
+   Sleep(1.0);
+   SetMaterialCel(startmat,4);
+}
+If(note == GetSenderRef())
+{ if(reading == 1)Return;
+
+   reading = 1;
+	//ChangeInv(player, 84, 1);  grab a key so i can test the dragonballs
+   print("INSTRUCTIONS:");
+   sleep(1.0);
+   print("Time Trial");
+   sleep(1.0);
+   print("Press Foreward to Accelerate");
+   sleep(1.0);
+   print("Press Back to Decellerate");
+   sleep(1.0);
+   print("Use the Boost Pads to Stay Ahead");
+   sleep(1.0); 
+   jkStringConcatAsciiString("Best Time: ");
+   jkStringConcatFlex(mytime);
+   jkStringConcatAsciiString(" -Shred");
+   jkStringOutput(player, -1);
+   jkStringClear();
+   reading = 0;
+}
+   Return;
+
+pulse:
+   AddThingVel(player, VectorScale(GetThingLVec(player), speed));
+   timecount = timecount + 0.5;
+   thrust = GetThingThrust(player);
+   SetInv(player,14,0);            //get rid of ki to prevent levelup or misc glitches.
+   if(GetThingHealth(player) < 1)  //prevent glitches if they kill themselves.
+{
+ SetThingModel(player, GetThingModel(guy));
+TeleportThing(player, guy);
+destroything(guy);  //more stable than destroy! how about that.
+destroything(attachment);
+ParseArg(player, "puppet=ky2.pup");
+ClearPhysicsFlags(player,0x400);
+ClearPhysicsFlags(player,0x100);
+ClearPhysicsFlags(player,0x40000);
+SetInvAvailable(player,1,weap1);
+SetInvAvailable(player,2,weap2);
+SetInvAvailable(player,3,weap3);
+SetInvAvailable(player,4,weap4);
+SetInvAvailable(player,5,weap5);
+SetInvAvailable(player,6,weap6);
+SetInvAvailable(player,7,weap7);
+SetInvAvailable(player,8,weap8);
+SetInvAvailable(player,9,weap9);
+SetInvAvailable(player,10,weap10);
+SetInvAvailable(player,21,ki);
+SetInvAvailable(player,25,charging);
+SetInvAvailable(player,25,kaoken);
+SetInvAvailable(player,30,throw);
+SetInvAvailable(player,31,sense);
+SetInvAvailable(player,32,melee);
+SetInvAvailable(player,40,bact);
+SetInvAvailable(player,41,ir);
+SetInvAvailable(player,42,field);
+ClearActorFlags(player,0x800000);
+StopSound(hs, 0);
+SetMaterialCel(arcademat,0); 
+SetPulse(0.0);
+}
+Return;
+
+entered:
+score = timecount/60;
+If(checkpoint1 == GetSenderRef())
+{PlaySoundThing(beep3, player, 3, -1, -1, 0x80);
+jkStringConcatAsciiString("CheckPoint! ");
+jkStringConcatFlex(score);
+jkStringConcatAsciiString(" minutes");
+jkStringOutput(player, -1);
+jkStringClear();
+}
+If(checkpoint2 == GetSenderRef())
+{
+ //SendMessage(arcade, user0);
+SetPulse(0.0);
+AddThingVel(player, VectorScale(GetThingLVec(player), -7));
+PlaySoundThing(beep3, player, 3, -1, -1, 0x80);
+SetActorFlags(player,0x200000);
+jkStringConcatPlayerName(player);
+jkStringConcatAsciiString(" did The Canyon Run in ");
+jkStringConcatFlex(score);
+jkStringConcatAsciiString(" minutes");
+jkStringOutput(player, -1);
+jkStringClear();
+
+If(score <= 1.41)
+{ChangeInv(player, 84, 1); 
+ print("Good Job! You win a key!");
+ PlaySoundThing(victory, player, 3, -1, -1, 0x80);
+}
+else
+If(score <= 2.0)
+{ChangeInv(player, 84, 1);
+ print("Good Job! You win a key!");
+ print("Shred Craft Unlocked");
+ PlaySoundThing(victory, player, 3, -1, -1, 0x80);
+ SetMaterialCel(hovermat,2);
+ speed = 7;
+ mytime = 1.41;
+}
+else
+If(score <= mytime)      
+{ChangeInv(player, 84, 1);
+ print("Good Job! You win a key!");
+ print("Black Hawk Unlocked");
+ PlaySoundThing(victory, player, 3, -1, -1, 0x80);
+ SetMaterialCel(hovermat,1);
+ speed = 5;
+ mytime = 2.0;
+}
+
+ClearActorFlags(player,0x200000);
+Sleep(2.0);
+ SetThingModel(player, GetThingModel(guy));
+ TeleportThing(player, guy);
+ destroything(guy);
+ destroything(attachment);
+ ParseArg(player, "puppet=ky2.pup");
+ //ClearPhysicsFlags(player,0x2);
+ ClearPhysicsFlags(player,0x400);
+ ClearPhysicsFlags(player,0x100);
+ ClearPhysicsFlags(player,0x40000);
+ ClearActorFlags(player,0x800000);
+SetInvAvailable(player,1,weap1);
+SetInvAvailable(player,2,weap2);
+SetInvAvailable(player,3,weap3);
+SetInvAvailable(player,4,weap4);
+SetInvAvailable(player,5,weap5);
+SetInvAvailable(player,6,weap6);
+SetInvAvailable(player,7,weap7);
+SetInvAvailable(player,8,weap8);
+SetInvAvailable(player,9,weap9);
+SetInvAvailable(player,10,weap10);
+SetInvAvailable(player,21,ki);
+SetInvAvailable(player,25,charging);
+SetInvAvailable(player,22,kaoken);
+SetInvAvailable(player,30,throw);
+SetInvAvailable(player,31,sense);
+SetInvAvailable(player,32,melee);
+SetInvAvailable(player,40,bact);
+SetInvAvailable(player,41,ir);
+SetInvAvailable(player,42,field);
+StopSound(hs, 0);
+SetMaterialCel(arcademat,0);
+timecount = 0;
+}
+Return;
+
+//user0:
+//Return;
+
+//killed:
+//if(player == GetSenderRef())
+//{ 
+//  SetThingModel(player, GetThingModel(guy));
+// TeleportThing(player, guy);
+// DestroyThing(guy);
+// DestroyThing(attachment);
+// ParseArg(player, "puppet=ky2.pup");
+// ClearPhysicsFlags(player,0x400);
+// ClearPhysicsFlags(player,0x100);
+// ClearPhysicsFlags(player,0x40000);
+//SetInvAvailable(player,1,weap1);
+//SetInvAvailable(player,2,weap2);
+//SetInvAvailable(player,3,weap3);
+//SetInvAvailable(player,4,weap4);
+//SetInvAvailable(player,5,weap5);
+//SetInvAvailable(player,6,weap6);
+//SetInvAvailable(player,7,weap7);
+//SetInvAvailable(player,8,weap8);
+//SetInvAvailable(player,9,weap9);
+//SetInvAvailable(player,10,weap10);
+//SetInvAvailable(player,21,ki);
+//SetInvAvailable(player,25,charging);
+//SetInvAvailable(player,25,kaoken);
+//SetInvAvailable(player,30,throw);
+//SetInvAvailable(player,31,sense);
+//SetInvAvailable(player,32,melee);
+//SetInvAvailable(player,40,bact);
+//SetInvAvailable(player,41,ir);
+//SetInvAvailable(player,42,field);
+//ClearActorFlags(player,0x800000);
+//StopSound(hs, 0);
+//SetMaterialCel(arcademat,0); 
+//SetPulse(0.0);
+//}
+
+Return;
+
+end
+

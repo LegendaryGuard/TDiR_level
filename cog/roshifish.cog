@@ -1,0 +1,63 @@
+# Jedi Knight Cog Script
+# fish
+# Shred18 20002
+
+symbols
+
+thing       ghost1
+thing       ghost2
+thing       ghost3
+thing       ghost4
+thing       ghost5
+thing       ghost6 
+thing       ghost7
+thing       ghost8
+thing       ghost9
+thing       ghost10
+thing       ghost11
+thing       ghost12
+thing       ghost12
+thing       ghost14
+thing       ghost15
+thing       ghost16
+thing       ghost17
+thing       ghost18
+thing       ghost19
+thing       ghost20
+template    fish 
+material    roshifish=roshifish.mat               local
+material    dolphintex=dolphintex.mat               local  
+message     startup
+
+end
+
+
+code
+
+startup:
+   MaterialAnim(roshifish, 10, 1);
+   MaterialAnim(dolphintex, 10, 1);
+   CreateThing(fish,ghost1);
+   CreateThing(fish,ghost2);
+   CreateThing(fish,ghost3);
+   CreateThing(fish,ghost4);
+   CreateThing(fish,ghost5);
+   CreateThing(fish,ghost6);
+   CreateThing(fish,ghost7);
+   CreateThing(fish,ghost8);
+   CreateThing(fish,ghost9);
+   CreateThing(fish,ghost10);
+   CreateThing(fish,ghost11);
+   CreateThing(fish,ghost12);
+   CreateThing(fish,ghost13);
+   CreateThing(fish,ghost14);
+   CreateThing(fish,ghost15);
+   CreateThing(fish,ghost16);
+   CreateThing(fish,ghost17);
+   CreateThing(fish,ghost18);
+   CreateThing(fish,ghost19);
+   CreateThing(fish,ghost20);
+   Return;
+
+end
+

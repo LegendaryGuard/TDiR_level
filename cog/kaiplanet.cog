@@ -1,0 +1,48 @@
+# Jedi Knight Cog Script
+# walk on king kais planet, even upside-down.
+# Shred18 & Hell Raiser
+
+flags=0x240
+
+symbols
+
+thing       player   local
+thing       planet
+message     touched
+message     pulse
+
+end
+
+
+code
+
+touched:
+
+	player = GetSourceRef();
+	if(planet == GetSenderRef())
+	{ 
+		player = GetSourceRef();
+		
+		SetPhysicsFlags(player, 0x400090); 
+		ClearPhysicsFlags(player, 0x800);
+		
+		AttachThingtoThingEx(player, planet, 0x2);  
+		SetPulse(0.5);   
+	}
+Return;
+
+pulse:
+
+	if(GetThingAttachFlags(player) != 0x2) 
+	{
+		ClearPhysicsFlags(player, 0x40);
+		ClearPhysicsFlags(player, 0x10);
+		ClearPhysicsFlags(player, 0x80);
+        DetachThing(player);
+        ClearThingAttachFlags(player,0x2);
+        SetPulse(0.0);
+		
+	}
+Return; 
+
+end

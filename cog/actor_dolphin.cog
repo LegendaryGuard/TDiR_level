@@ -1,0 +1,20 @@
+# Jedi Knight Cog Script
+# ACTOR_FISH.COG
+# ACTOR Script - fish
+# Shred18 2002
+
+symbols
+thing           dolphin local
+message		created
+message         pulse
+end
+
+code
+created:
+        dolphin = GetSourceRef();
+    SetPulse(0.5);
+return;
+pulse:
+	AddThingVel(dolphin, VectorSet(0.0, 0.0, 3), 30.0)); 
+return;
+end

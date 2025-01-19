@@ -1,0 +1,16 @@
+# Jedi Knight Cog Script
+# ACTOR_FISH.COG
+# ACTOR Script - fish
+# Shred18 2002
+
+symbols
+thing           fish
+message		damaged
+end
+
+code
+damaged:
+        fish = GetSourceRef();
+	AddThingVel(fish, VectorScale(GetThingLVec(fish), 1.5));
+	return;
+end

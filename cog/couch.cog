@@ -1,0 +1,23 @@
+# Jedi Knight Cog Script
+# activate the couch :D
+# Shred18 20002
+flags=0x240
+symbols
+
+thing       player   local
+thing       couch
+message     activated
+
+end
+
+
+code
+
+activated:
+   couch = GetSenderRef();
+   player = GetSourceRef(); 
+   print("Looks Comfy");
+   Return;
+
+end
+
